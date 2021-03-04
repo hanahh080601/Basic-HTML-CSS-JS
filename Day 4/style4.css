@@ -40,6 +40,10 @@
     color: rgb(129, 129, 129);
     position:relative;
 }
+.btnmenu:focus
+{
+    outline: none;
+}
 .btnmenu
 {
     display: flex;
