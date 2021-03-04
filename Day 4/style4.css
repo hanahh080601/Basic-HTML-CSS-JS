@@ -74,14 +74,20 @@
     border: none;
     width: 85px;
     height: 45px;
-    border-radius: 10px;
     align-items: center;
     background-color: rgb(27, 27, 27);   
     cursor: pointer;
 }
 .buttonmntg:hover
 {
+    border-radius: 7px;
     background-color: #424242;
+}
+.buttonmntg:focus
+{
+    outline: none;
+    border-bottom-width: 10px;
+    border-bottom: 3px solid rgb(0, 140, 255);
 }
 .mntp
 {
@@ -128,6 +134,10 @@
 {
     background-color: #424242;
 }
+.avaaa:focus
+{
+    outline: none;
+}
 
 .btt
 {
@@ -152,7 +162,10 @@
 {
     background-color: #424242;
 }
-
+.btt:focus
+{
+    outline: none;
+}
 .up
 {
     position:relative;
@@ -163,6 +176,7 @@
 {
     position: relative;
 }
+
 .button
 {
     position: absolute;
@@ -181,9 +195,19 @@
 {
     background-color: #424242;
 }
+.button:focus
+{
+    outline: none;
+}
 .avatar
 {
     position: relative;
+    cursor: pointer;
+}
+
+.avatar:focus
+{
+    outline: none;
 }
 .changeava
 {
@@ -203,6 +227,10 @@
 .changeava:hover
 {
     background-color: #424242;
+}
+.changeava:focus
+{
+    outline: none;
 }
 .Name 
 {
@@ -233,7 +261,10 @@
 {
     font-weight: 1000;
 }
-
+.tts:focus
+{
+    outline: none;
+}
 .down
 {
     justify-content: space-between;
@@ -270,8 +301,6 @@
     background-color: rgb(36, 36, 36);
     outline: none;
     margin-right: 4px;
-
-    border-radius: 20px;
     height: 6.5vh;
     font-size: medium;
     z-index: 0;
@@ -280,7 +309,15 @@
 .option:hover
 {
     background-color: #424242;
+    border-radius: 5px;
 }
+.option:focus
+{
+    color: rgba(24, 151, 255, 0.925);
+    outline: none;
+    border-bottom: 3px solid rgba(24, 151, 255, 0.925);
+}
+
 .optiontext
 {
     font-size: 15px;
@@ -324,6 +361,10 @@
 {
     background-color: #424242;
 }
+.cscn:focus
+{
+    outline: none;
+}
 .btnbottom
 {
     display: flex;
@@ -347,18 +388,55 @@
 {
     background-color: #424242;
 }
+.btnbottom:focus
+{
+    outline: none;
+}
 
 .mes
 {
+    box-shadow:0px 0.4px 5px rgb(54, 54, 54);
     position: fixed;
     border: none;
-    border-radius: 17px;
-    background-color: rgba(31, 31, 31, 0.5);
-    width: 35px;
-    height: 35px;
+    border-radius: 20px;
+    background-color: rgba(15, 15, 15, 0.644);
+    width: 40px;
+    height: 40px;
     font-size: larger;
-    right: 2vw;
-    bottom: -11vh;
+    right: 10px;
+    bottom: 15px;
     z-index: 2;
     color: aliceblue;
+    cursor: pointer;
 }
+.mes:hover
+{
+    background-color: #424242;
+}
+.mes:focus
+{
+    outline: none;
+}
+.mes .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .mes:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .mes .tooltiptext {
+    top: -5px;
+    right: 110%;
+  }
