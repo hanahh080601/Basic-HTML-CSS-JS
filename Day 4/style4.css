@@ -440,3 +440,52 @@
     top: -5px;
     right: 110%;
   }
+
+  .mes1
+  {
+      background-image: url("images/Tokyo-Town-Shinjuku-als-HDR.jpg") ;
+      box-shadow:0px 0.4px 5px rgb(54, 54, 54);
+      position: fixed;
+      border: none;
+      border-radius: 20px;
+      background-color: rgba(15, 15, 15, 0.644);
+      width: 40px;
+      height: 40px;
+      font-size: larger;
+      right: 10px;
+      bottom: 70px;
+      z-index: 2;
+      color: aliceblue;
+      cursor: pointer;
+  }
+  .mes1:hover
+  {
+      background-color: #424242;
+  }
+  .mes1:focus
+  {
+      outline: none;
+  }
+  .mes1 .tooltiptext1 {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+     
+      /* Position the tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+    }
+    
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .mes1:hover .tooltiptext1 {
+      visibility: visible;
+    }
+  
+    .mes1 .tooltiptext1 {
+      top: -5px;
+      right: 110%;
+    }
