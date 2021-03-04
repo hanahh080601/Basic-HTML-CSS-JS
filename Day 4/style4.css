@@ -1,7 +1,7 @@
 .container
 {
     width: 100vw;
-    height: 85vh;
+    height: 83vh;
     justify-content: space-around;
     position: relative;
     background-color: rgb(36, 36, 36);
@@ -33,6 +33,7 @@
     margin-left: 18px;
     margin-right: 8px;
     position:relative;
+    cursor: pointer;
 }
 .timkiem
 {
@@ -66,9 +67,22 @@
     width: 30%;
     position:absolute;
     left:530px;
-    top:15px;
+    top:11.5px;
 }
-
+.buttonmntg
+{
+    border: none;
+    width: 85px;
+    height: 45px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: rgb(27, 27, 27);   
+    cursor: pointer;
+}
+.buttonmntg:hover
+{
+    background-color: #424242;
+}
 .mntp
 {
     display: flex;
@@ -101,11 +115,18 @@
     background-color: rgb(85, 85, 85);
     padding-left: 49px;
     font-weight: 900;
+    cursor: pointer;
 }
+
 .avaname
 {
     color: rgb(129, 129, 129);
     position:relative;
+    cursor: pointer;
+}
+.avaaa:hover
+{
+    background-color: #424242;
 }
 
 .btt
@@ -125,6 +146,11 @@
     z-index: 0;
     background-color: rgb(78, 78, 78);
     right: 5px;
+    cursor: pointer;
+}
+.btt:hover
+{
+    background-color: #424242;
 }
 
 .up
@@ -149,6 +175,11 @@
     height: 5vh;
     font-size: medium;
     color: aliceblue;
+    cursor: pointer;
+}
+.button:hover
+{
+    background-color: #424242;
 }
 .avatar
 {
@@ -167,6 +198,11 @@
     top: -3vh;
     z-index: 2;
     color: aliceblue;
+    cursor: pointer;
+}
+.changeava:hover
+{
+    background-color: #424242;
 }
 .Name 
 {
@@ -191,6 +227,11 @@
     color: rgb(34, 126, 206);
     background-color: rgb(36, 36, 36);
     font-size: larger;
+    cursor: pointer;
+}
+.tts:hover
+{
+    font-weight: 1000;
 }
 
 .down
@@ -228,7 +269,17 @@
     border: none;
     background-color: rgb(36, 36, 36);
     outline: none;
-    margin-right: 4px ;
+    margin-right: 4px;
+
+    border-radius: 20px;
+    height: 6.5vh;
+    font-size: medium;
+    z-index: 0;
+    right: 5px;
+}
+.option:hover
+{
+    background-color: #424242;
 }
 .optiontext
 {
@@ -255,7 +306,7 @@
     align-items: center;
     margin-right: 7px;
     border-radius: 10px;
-    width: 16vw;
+    width: 16.5vw;
     height: 6.5vh;
     font-size: medium;
     font-family: 'Roboto', sans-serif;
@@ -266,8 +317,13 @@
     background-color: rgb(85, 85, 85);
     padding-left: 10px;
     font-weight: 900;
+    font-size: large;
+    cursor: pointer;
 }
-
+.cscn:hover
+{
+    background-color: #424242;
+}
 .btnbottom
 {
     display: flex;
@@ -287,17 +343,22 @@
     right: 5px;
     cursor: pointer;
 }
+.btnbottom:hover
+{
+    background-color: #424242;
+}
 
-.option:hover
+.mes
 {
     position: fixed;
     border: none;
     border-radius: 17px;
-    background-color: rgba(172, 172, 172, 0.5);
+    background-color: rgba(31, 31, 31, 0.5);
     width: 35px;
     height: 35px;
     font-size: larger;
-    left: 55vw;
-    top: -3vh;
+    right: 2vw;
+    bottom: -11vh;
     z-index: 2;
+    color: aliceblue;
 }
