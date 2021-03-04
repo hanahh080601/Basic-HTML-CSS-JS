@@ -287,3 +287,17 @@
     right: 5px;
     cursor: pointer;
 }
+
+.option:hover
+{
+    position: fixed;
+    border: none;
+    border-radius: 17px;
+    background-color: rgba(172, 172, 172, 0.5);
+    width: 35px;
+    height: 35px;
+    font-size: larger;
+    left: 55vw;
+    top: -3vh;
+    z-index: 2;
+}
