@@ -1,0 +1,49 @@
+.container
+{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(26, 18, 32);
+}
+.album
+{
+    width: 30vw;
+    height: 50vh;
+    position: relative;
+    top: 180px;
+    left:180px;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.img
+{
+    width: 30vw;
+    height: 50vh;
+    border-radius: 20px;
+}
+.blur
+{
+    width: 30vw;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: 0.3s;
+    visibility:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(185, 78, 78, 0.322);
+}
+.album:hover .blur
+{   
+    visibility:visible;
+}
+.album:hover
+{
+    transform: scale(1.05);
+}
