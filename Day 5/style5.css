@@ -59,6 +59,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-right:40px;
+    position: relative;
 }
 .album
 {
@@ -71,6 +72,13 @@
     cursor: pointer;
     overflow: hidden;
     margin-right: 25px;
+    z-index: 0;
+}
+.title
+{
+    top:70px;
+
+
 }
 .img
 {
@@ -113,6 +121,29 @@
     align-items: center;
 }
 
+.like .tooltiptext
+{
+    visibility: hidden;
+    width: 110px;
+    background-color: rgba(70, 69, 69, 0.815);
+    color: #fff;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 6px;
+    position: absolute;
+    font-size: 13px;
+}
+  
+.like:hover .tooltiptext
+{
+    visibility: visible;
+}
+
+.like .tooltiptext {
+    left:-1px;
+    top: 60px;
+}
+
 .like:hover
 {
     background-color: rgba(177, 174, 174, 0.425);
@@ -142,4 +173,27 @@
 {
     background-color: rgba(177, 174, 174, 0.425);
     border-radius: 25px;
+}
+
+.more .tooltiptext1
+{
+    visibility: hidden;
+    width: 45px;
+    background-color: rgba(70, 69, 69, 0.815);
+    color: #fff;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 6px;
+    position: absolute;
+    font-size: 13px;
+}
+  
+.more:hover .tooltiptext1
+{
+    visibility: visible;
+}
+
+.more .tooltiptext1 {
+    right:20px;
+    top: 60px;
 }
