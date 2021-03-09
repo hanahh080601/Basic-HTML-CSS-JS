@@ -2,15 +2,16 @@
 {
     margin: 0;
     width: 100vw;
-    height: 100vh;
-    background-color: rgb(26, 18, 32);
+    height: 150vh;
+    background-color: rgb(20, 14, 26);
     z-index: 0;
     padding-right: 40px;
 }
+
 .hit
 {
     width: 100vw;
-    height: 10vh;
+    height: 6vh;
     margin: 0px;
     display: flex;
     flex-direction: row;
@@ -40,15 +41,18 @@
 .btn1
 {
     margin-right: 80px;
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
+    opacity: 0.4;
 }
 .btn2
 {
     margin-right: 15px;
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
 }
+
 .r1
 {
     width: 96vw;
@@ -61,6 +65,7 @@
     padding-right:40px;
     position: relative;
 }
+
 .album
 {
     width: 14vw;
@@ -74,12 +79,7 @@
     margin-right: 25px;
     z-index: 0;
 }
-.title
-{
-    top:70px;
 
-
-}
 .img
 {
     width: 14vw;
@@ -131,7 +131,8 @@
     padding: 4px 0;
     border-radius: 6px;
     position: absolute;
-    font-size: 13px;
+    font-size: 11px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
   
 .like:hover .tooltiptext
@@ -185,7 +186,8 @@
     padding: 4px 0;
     border-radius: 6px;
     position: absolute;
-    font-size: 13px;
+    font-size: 11px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
   
 .more:hover .tooltiptext1
@@ -196,4 +198,122 @@
 .more .tooltiptext1 {
     right:20px;
     top: 60px;
+}
+
+.r2
+{
+    top:28vh;
+    width: 96vw;
+    height: 3vh;
+    margin-right: 30px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right:40px;
+    position: relative;
+}
+
+.title
+{
+    width: 14vw;
+    height: 7vh;
+    position: relative;
+    top: -5px;
+    left:30px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-right: 25px;
+    z-index: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+.title:hover
+{
+    color: blueviolet;
+}
+
+.hit1
+{
+    width: 100vw;
+    height: 10vh;
+    margin-top:30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.r3
+{
+    width: 96vw;
+    height: 5vh;
+    margin-right: 30px;
+    margin-left: 11px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right:40px;
+    position: relative;
+}
+
+.con1
+{
+    width: 30vw;
+    height: 23vh;
+    position: relative;
+    top: 40px;
+    left:30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 25px;
+    z-index: 0;
+    background-color: rgba(67, 58, 73, 0.466);
+    box-shadow: 0px 0px 11px rgba(45, 40, 48, 0.39);
+}
+
+.album1
+{
+    width: 8vw;
+    height: 18vh;
+    position: relative;
+    margin: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img1
+{
+    width: 8vw;
+    height: 18vh;
+    border-radius: 8px;
+    transform: scale(1);
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.blur1
+{
+    width: 8vw;
+    height: 18vh;
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 8px;
+    transform: scale(1);
+    transition: 0.3s;
+    visibility:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(46, 44, 49, 0.432);
+}
+.album1:hover .blur1
+{   
+    visibility:visible;
+}
+.album1:hover .img1
+{
+    transform: scale(1.1);
 }
