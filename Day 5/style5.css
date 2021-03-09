@@ -4,46 +4,142 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(26, 18, 32);
+    z-index: 0;
+    padding-right: 40px;
+}
+.hit
+{
+    width: 100vw;
+    height: 10vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hits
+{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-left: 45px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.btn
+{
+    color:rgb(255, 255, 255);
+    z-index: 1;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin:20px;
+    padding:30px;
+}
+.btn1
+{
+    margin-right: 80px;
+    width: 20px;
+    height: 20px;
+}
+.btn2
+{
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+.r1
+{
+    width: 96vw;
+    height: 12vh;
+    margin-right: 30px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right:40px;
 }
 .album
 {
-    width: 30vw;
-    height: 50vh;
+    width: 14vw;
+    height: 30vh;
     position: relative;
-    top: 180px;
-    left:180px;
-    border-radius: 20px;
+    top: 70px;
+    left:30px;
+    border-radius: 7px;
     cursor: pointer;
-    transform: scale(1);
-    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 25px;
 }
 .img
 {
-    width: 30vw;
-    height: 50vh;
-    border-radius: 20px;
+    width: 14vw;
+    height: 30vh;
+    border-radius: 7px;
+    transform: scale(1);
+    transition: 0.5s;
+    object-fit: cover;
 }
 .blur
 {
-    width: 30vw;
-    height: 50vh;
+    width: 14vw;
+    height: 30vh;
     position: absolute;
     top: 0;
     left:0;
-    border-radius: 20px;
+    border-radius: 7px;
     transform: scale(1);
     transition: 0.3s;
     visibility:hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(185, 78, 78, 0.322);
+    background-color: rgba(46, 44, 49, 0.432);
 }
 .album:hover .blur
 {   
     visibility:visible;
 }
-.album:hover
+.album:hover .img
 {
-    transform: scale(1.05);
+    transform: scale(1.1);
+}
+.like
+{
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like:hover
+{
+    background-color: rgba(177, 174, 174, 0.425);
+    border-radius: 25px;
+}
+.play 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play:hover
+{
+    background-color: rgba(71, 70, 70, 0.315);
+    border-radius: 29px;
+}
+
+.more 
+{
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more:hover 
+{
+    background-color: rgba(177, 174, 174, 0.425);
+    border-radius: 25px;
 }
