@@ -53,6 +53,11 @@
     cursor: pointer;
 }
 
+.btn2:hover 
+{
+    opacity: 0.4;
+}
+
 .r1
 {
     width: 96vw;
