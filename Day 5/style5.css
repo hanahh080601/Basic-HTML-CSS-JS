@@ -2,7 +2,7 @@
 {
     margin: 0;
     width: 100vw;
-    height: 150vh;
+    height: 120vh;
     background-color: rgb(20, 14, 26);
     z-index: 0;
     padding-right: 40px;
@@ -406,7 +406,6 @@
 {
     margin-top:170px;
     width: 96vw;
-    height: 5vh;
     margin-right: 30px;
     margin-left: 11px;
     display: flex;
@@ -419,7 +418,7 @@
 .con2
 {
     width: 30vw;
-    height: 15vh;
+    height: 11vh;
     position: relative;
     top: 40px;
     left:30px;
@@ -427,38 +426,36 @@
     cursor: pointer;
     margin-right: 25px;
     z-index: 0;
-    background-color: rgba(67, 58, 73, 0.466);
-    box-shadow: 0px 0px 11px rgba(45, 40, 48, 0.39);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.album1
+.album2
 {
-    width: 8vw;
-    height: 18vh;
+    width: 4vw;
+    height: 9vh;
     position: relative;
-    margin: 17px;
+    margin: 7px;
     border-radius: 8px;
     cursor: pointer;
     overflow: hidden;
 }
 
-.img1
+.img2
 {
-    width: 8vw;
-    height: 18vh;
+    width: 4vw;
+    height: 9vh;
     border-radius: 8px;
     transform: scale(1);
     transition: 0.5s;
     object-fit: cover;
 }
 
-.blur1
+.blur2
 {
-    width: 8vw;
-    height: 18vh;
+    width: 4vw;
+    height: 9vh;
     position: absolute;
     top: 0;
     left:0;
@@ -471,11 +468,136 @@
     justify-content: center;
     background-color: rgba(46, 44, 49, 0.432);
 }
-.con1:hover .blur1
+.con2:hover 
+{
+    background-color: rgba(67, 58, 73, 0.466);
+}
+.con2:hover .blur2
 {   
     visibility:visible;
 }
-.con1:hover .img1
+
+.pd1 
 {
-    transform: scale(1.1);
+    width: 5.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 3px;
+    visibility: hidden;
+    padding: 15px;
+}
+.con2:hover .pd1 
+{
+    visibility: visible;
+}
+.mic
+{
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mic:hover
+{
+    background-color: rgba(177, 174, 174, 0.425);
+    border-radius: 20px;
+}
+
+.more1
+{
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more1:hover
+{
+    background-color: rgba(177, 174, 174, 0.425);
+    border-radius: 20px;
+}
+
+.phai1
+{
+    padding: 6px;
+    width: 24vw;
+    height: 22vh;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pt1
+{
+    height: 20px;
+
+}
+.tenbh1
+{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 0px;
+}
+.tencs1
+{
+    position: relative;
+    top: -7px;
+    left:0px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-right: 25px;
+    z-index: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.tencs1:hover
+{
+    color:  rgb(187, 59, 238);   
+}
+
+.mic .tooltiptext2
+{
+    visibility: hidden;
+    width: 115px;
+    background-color: rgba(70, 69, 69, 0.815);
+    color: #fff;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 6px;
+    position: absolute;
+    font-size: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    right:33px;
+    top: -4px;
+}
+  
+.mic:hover .tooltiptext2
+{
+    visibility: visible;
+}
+
+.more1 .tooltiptext3
+{
+    visibility: hidden;
+    width: 50px;
+    background-color: rgba(70, 69, 69, 0.815);
+    color: #fff;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 6px;
+    position: absolute;
+    font-size: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    right:20px;
+    top: -4px;
+}
+  
+.more1:hover .tooltiptext3
+{
+    visibility: visible;
 }
