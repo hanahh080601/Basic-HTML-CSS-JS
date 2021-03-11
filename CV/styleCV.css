@@ -33,7 +33,7 @@
 
 .HomeBK
 {
-    background-color: rgb(255, 230, 119);
+    background-color: rgb(250, 220, 218);
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -62,7 +62,7 @@
 {
     width: 33vw;
     height: 90vh;
-    border-bottom-right-radius: 19vw;
+    border-bottom-right-radius: 20vw;
 }
 
 .info
@@ -75,10 +75,10 @@
 
 .social
 {
-    border-radius: 3.3vw;
-    width: 2.5vw;
-    height: 5.3vh;
-    background-color: rgb(255, 140, 32);
+    border-radius: 3.4vw;
+    width: 2.7vw;
+    height: 5.7vh;
+    background-color: rgb(218, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
