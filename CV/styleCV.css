@@ -1,0 +1,67 @@
+
+.header1
+{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.headd
+{
+    width: 65vw;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.Suzie
+{
+    width: fit-content;
+}
+.nav
+{
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.HomeBK
+{
+    background-color: rgb(255, 230, 119);
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+.HomeContent
+{
+    padding-top:30vh;
+    padding-left:1vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+}
+.suzy1 
+{
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
+    padding-right: 0;
+    padding-left: 20vw;
+    padding-top: 10vh;
+    border-top-right-radius: 23vw;
+    border-bottom-right-radius: 23vw;
+}
+
+.imgsuzy1
+{
+    width: 33vw;
+    height: 90vh;
+    border-bottom-right-radius: 21vw;
+}
+
