@@ -68,7 +68,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 30%;
+    width: 35%;
     position:absolute;
     left:530px;
     top:11.5px;
@@ -118,11 +118,11 @@
     height: 6.5vh;
     font-size: medium;
     font-family: 'Roboto', sans-serif;
-    color: rgb(180, 180, 180) ;
+    color: rgb(8, 115, 255) ;
     border: none;
     position:relative;
     z-index: 0;
-    background-color: rgb(85, 85, 85);
+    background-color: rgba(79, 141, 255, 0.24);
     padding-left: 49px;
     font-weight: 900;
     cursor: pointer;
@@ -130,13 +130,13 @@
 
 .avaname
 {
-    color: rgb(129, 129, 129);
+    color: rgba(97, 97, 97, 0.959);
     position:relative;
     cursor: pointer;
 }
 .avaaa:hover
 {
-    background-color: #424242;
+    background-color: rgba(79, 141, 255, 0.445);
 }
 .avaaa:focus
 {
@@ -207,8 +207,26 @@
 {
     position: relative;
     cursor: pointer;
+    background-color: #424242;
 }
 
+.imgg 
+{
+    position: absolute;
+    z-index: 1; 
+    border-radius: 50%; 
+    width: 183px;
+     height: 183px; 
+     left: -9px; 
+     border-color: rgb(109, 109, 109); 
+     border-style: solid; 
+     margin-top: -165px; 
+     margin-left: 46vw;
+}
+.avatar:hover .imgg 
+{
+    opacity: 0.93;
+}
 .avatar:focus
 {
     outline: none;
