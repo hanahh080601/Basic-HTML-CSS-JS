@@ -237,7 +237,7 @@
     display: flex;
     flex-direction: row;
     width: 73vw;
-    margin-bottom: 5vw;
+    margin-bottom: 6vw;
 }
 .skill
 {
@@ -284,6 +284,12 @@
     border-color:rgba(0, 0, 0, 0.089);
     border-width: 1px;
 }
+.o1:hover 
+{
+    box-shadow: 3px 3px 15px rgba(136, 136, 136, 0.274);
+    transform: translateY(-0.3vw);
+    transition: 0.5s;
+}
 .circle
 {
     width: 3.3vw;
@@ -315,6 +321,8 @@
     background-color: white;
     position: relative;
     z-index: 0;
+    margin-top: 1.3vw;
+    margin-bottom: 0.8vw;
 }
 
 .filler
@@ -335,6 +343,131 @@
     font-size: 12px;
 }
 .tooltip
+{   
+    color: aliceblue;
+    background-color: #131313;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px;
+    position: absolute;
+    z-index: 2;
+    right: 3.2vw;
+    height: 0.25vh;
+    width: 1.1vw;
+    margin-bottom: 10vh;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+}
+.chart
 {
-    
+    display: flex;
+    flex-direction: column;
+}
+.EXP
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MyExp
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+}
+
+.textp3
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(8, 5, 20, 0.63);
+    margin-top: -0.5vw;
+    width: 43vw;
+    text-align: center;
+}
+
+.jobtitle
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.3vw;
+    margin-top: 1vw;
+}
+
+.year 
+{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    width: 6.2vw;
+    height: 3.7vh;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -0.4vw;
+}
+.icon
+{
+    width: 1.3vw;
+    height: 1.3vw;
+}
+.title 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.circle1
+{
+    width: 3.3vw;
+    height: 3.3vw;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+}
+
+.o2
+{
+    width: 32vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vw;
+    background-color: white;
+    margin: 1vw;
+    align-items: left;
+    justify-content: left;
+    border-style: solid;
+    border-color:rgba(0, 0, 0, 0.089);
+    border-width: 1px;
+}
+.jobexp
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1vw;
+}
+.o2:hover 
+{
+    box-shadow: 3px 3px 15px rgba(136, 136, 136, 0.274);
+    transform: translateY(-0.3vw);
+    transition: 0.5s;
 }
