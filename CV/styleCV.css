@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     position: fixed;
+    z-index: 100;
 }
 
 .headd
@@ -210,7 +211,7 @@
 .texth1 
 {
     font-family: 'Rubik', sans-serif;
-    font-size: 50px;
+    font-size: 47px;
     font-weight: 700;
     color: var(--text-color);
 }
@@ -389,7 +390,7 @@
     font-weight: 400;
     color: rgba(8, 5, 20, 0.63);
     margin-top: -0.5vw;
-    width: 43vw;
+    width: 40vw;
     text-align: center;
 }
 
@@ -566,7 +567,7 @@
 .o-ser:hover
 {
     transform: translate(0.3vw,-0.3vw);
-    transition: 0.4s;
+    transition: 0.6s;
     box-shadow: -0.6vw 0.6vw var(--main-color);
 }
 .o-ser-logo
@@ -578,4 +579,82 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.portfolio
+{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+}
+
+.port-img
+{
+    width: 24vw;
+    height: 24vw;
+}
+.portfolio-o
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0.37vw;
+}
+.blur
+{
+    width: 20.8vw;
+    height: 22.5vw;
+    position: absolute;
+    background-color: #000000d7;
+    padding-left: 1.7vw;
+    padding-bottom: 0;
+    padding-right: 0;
+    visibility: hidden;
+    /* top:1vw;
+    left: 1vw; */
+    z-index: 2;
+}
+.portfolio-o:hover
+{
+    transform: translateY(-0.37vw);
+    transition: 0.8s;
+}
+.portfolio-o:hover .blur
+{
+    visibility: visible;
+    transition: 0.7s;
+}
+.port-h3
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.2vw;
+    margin-top: 1.7vw;
+}
+.port-p
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20x;
+    font-weight: 500;
+    color: white;
+}
+.plus
+{
+    position: absolute ;
+    background-color: var(--main-color);
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.3vw;
+    height: 3.3vw;
+    bottom: 0;
+    right: 0;
 }
