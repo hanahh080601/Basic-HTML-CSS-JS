@@ -2,6 +2,8 @@
 {
     --text-color: rgb(17, 11, 46);
     --main-color: rgb(252, 77, 77);
+    --shadow-color: rgba(136, 136, 136, 0.274);
+    --text-p-color:rgba(8, 5, 20, 0.63);
 }
 .header1
 {
@@ -247,6 +249,7 @@
     font-weight: 700;
     color: var(--text-color);
 }
+
 .textp2
 {
     font-family: 'Rubik', sans-serif;
@@ -373,6 +376,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5vw;
 }
 .MyExp
 {
@@ -381,8 +385,24 @@
     align-items: center;
     justify-content: center;
     width: 70vw;
+    position: relative;
 }
-
+.hightlight1::before
+{
+    content: "";
+    width: 0;
+    height: 2.7vh;
+    background-color: rgba(255, 0, 43, 0.178);
+    position: absolute;
+    z-index: -1;
+    top:4.2vw;
+}
+.EXP:hover .hightlight1::before
+{
+    width: 22vw;
+    transition: 0.7s;
+    left: 24vw;
+}
 .textp3
 {
     font-family: 'Rubik', sans-serif;
@@ -534,6 +554,23 @@
     margin-top: 5vw;
     margin-bottom: 5vw;
 }
+
+.hightlight2::before
+{
+    content: "";
+    width: 0;
+    height: 2.7vh;
+    background-color: rgba(255, 0, 43, 0.178);
+    position: absolute;
+    z-index: -1;
+    top:4.2vw;
+}
+.service:hover .hightlight2::before
+{
+    width: 36vw;
+    transition: 0.7s;
+    left: 17vw;
+}
 .serviceTable
 {
     display: grid;
@@ -587,7 +624,32 @@
     justify-content: center;
     background-color:white;
 }
-
+.MyExp1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    position: relative;
+}
+.hightlight3::before
+{
+    content: "";
+    width: 0;
+    height: 2.7vh;
+    background-color: rgba(255, 0, 43, 0.178);
+    position: absolute;
+    z-index: -1;
+    top:4.2vw;
+}
+.portfolio:hover .hightlight3::before
+{
+    width: 24vw;
+    transition: 0.7s;
+    left: 23vw;
+    z-index: 0;
+}
 .port-img
 {
     width: 24vw;
@@ -619,7 +681,7 @@
 .portfolio-o:hover
 {
     transform: translateY(-0.37vw);
-    transition: 0.8s;
+    transition: 0.5s;
 }
 .portfolio-o:hover .blur
 {
@@ -657,4 +719,29 @@
     height: 3.3vw;
     bottom: 0;
     right: 0;
+}
+.MyExp
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    position: relative;
+}
+.hightlight4::before
+{
+    content: "";
+    width: 0;
+    height: 2.7vh;
+    background-color: rgba(255, 0, 43, 0.178);
+    position: absolute;
+    z-index: -1;
+    top:4.2vw;
+}
+.service:hover .hightlight4::before
+{
+    width: 40vw;
+    transition: 0.7s;
+    left: 15vw;
 }
