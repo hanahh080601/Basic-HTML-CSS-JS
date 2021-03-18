@@ -4,6 +4,8 @@
     --main-color: rgb(252, 77, 77);
     --shadow-color: rgba(136, 136, 136, 0.274);
     --text-p-color:rgba(8, 5, 20, 0.63);
+    --hightlight-color:rgba(255, 0, 43, 0.178);
+    --bk-color:rgba(250, 220, 218, 0.315);
 }
 .header1
 {
@@ -51,12 +53,14 @@
 .navbtn:hover
 {
     background-color: var(--main-color);
-    color: rgb(255, 255, 255);
+    color: white;
+    transition: 0.5s;
 }
 .navbtn:active
 {
     background-color: var(--main-color);
-    color: rgb(255, 255, 255);
+    color: white;
+    transition: 0.5s;
 }
 .container
 {
@@ -67,7 +71,7 @@
 
 .HomeBK
 {
-    background-color: rgba(250, 220, 218, 0.74);
+    background-color: rgba(255, 216, 213, 0.644);
     display: flex;
     justify-content: space-between;
 }
@@ -113,7 +117,7 @@
 .suzy1 
 {
     width: 35vw;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     padding-left: 13vw;
     padding-top: 10vh;
     border-top-right-radius: 23vw;
@@ -150,6 +154,7 @@
 .social:hover 
 {
     background-color: var(--text-color);
+    transition: 0.5s;
 }
 .AUBK 
 {
@@ -223,7 +228,7 @@
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: rgba(8, 5, 20, 0.63);
+    color: var(--text-p-color);
 }
 
 .imgsuzy2 
@@ -255,7 +260,7 @@
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: rgba(8, 5, 20, 0.63);
+    color: var(--text-p-color);
 }
 .ExSkill
 {
@@ -290,7 +295,7 @@
 }
 .o1:hover 
 {
-    box-shadow: 3px 3px 15px rgba(136, 136, 136, 0.274);
+    box-shadow: 3px 3px 15px var(--shadow-color);
     transform: translateY(-0.3vw);
     transition: 0.5s;
 }
@@ -341,7 +346,7 @@
     flex-direction: row;
     align-items: center;
     padding-left: 0.8vw;
-    color: rgb(255, 255, 255);
+    color: white;
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
     font-size: 12px;
@@ -392,7 +397,7 @@
     content: "";
     width: 0;
     height: 2.7vh;
-    background-color: rgba(255, 0, 43, 0.178);
+    background-color: var(--hightlight-color);
     position: absolute;
     z-index: -1;
     top:4.2vw;
@@ -408,7 +413,7 @@
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: rgba(8, 5, 20, 0.63);
+    color: var(--text-p-color);
     margin-top: -0.5vw;
     width: 40vw;
     text-align: center;
@@ -489,7 +494,7 @@
 }
 .o2:hover 
 {
-    box-shadow: 3px 3px 15px rgba(136, 136, 136, 0.274);
+    box-shadow: 3px 3px 15px var(--shadow-color);
     transform: translateY(-0.3vw);
     transition: 0.4s;
 }
@@ -537,12 +542,13 @@
     border-width: 1px;
     border-color: white;
     border-style: solid;
+    transition: 0.5s;
 }
 .service
 {
     display: flex;
     justify-content: center;
-    background-color:rgba(250, 220, 218, 0.356);
+    background-color:var(--bk-color);
 }
 
 .serviceCon
@@ -560,7 +566,7 @@
     content: "";
     width: 0;
     height: 2.7vh;
-    background-color: rgba(255, 0, 43, 0.178);
+    background-color: var(--hightlight-color);
     position: absolute;
     z-index: -1;
     top:4.2vw;
@@ -599,7 +605,7 @@
     margin: 1vw;
     align-items: left;
     justify-content: center;
-    box-shadow: 0px 0px 13px rgba(136, 136, 136, 0.178);
+    box-shadow: 0px 0px 13px var(--shadow-color);
 }
 .o-ser:hover
 {
@@ -638,7 +644,7 @@
     content: "";
     width: 0;
     height: 2.7vh;
-    background-color: rgba(255, 0, 43, 0.178);
+    background-color: var(--hightlight-color);
     position: absolute;
     z-index: -1;
     top:4.2vw;
@@ -661,7 +667,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     margin: 0.37vw;
 }
 .blur
@@ -719,6 +724,7 @@
     height: 3.3vw;
     bottom: 0;
     right: 0;
+    cursor: pointer;
 }
 .MyExp
 {
@@ -734,9 +740,9 @@
     content: "";
     width: 0;
     height: 2.7vh;
-    background-color: rgba(255, 0, 43, 0.178);
+    background-color: var(--hightlight-color);
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     top:4.2vw;
 }
 .service:hover .hightlight4::before
