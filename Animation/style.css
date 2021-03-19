@@ -15,6 +15,8 @@
 .bubble
 {
     animation: bubble 5s infinite;
+    transform: translateY(105vh);
+    
 }
 .bubble:nth-child(1)
 {
