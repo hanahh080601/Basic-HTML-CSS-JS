@@ -9,46 +9,61 @@
     <link rel="stylesheet" href="styleCV.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
 </head>
-<body style="display: flex; justify-content:center; margin: 0;">
+<body style="display: block; justify-content:center; margin: 0; padding:0;">
     <header class="header1">
         <div class="headd">
             <div class="suzie">
                 <h1>Suzie.</h1>
             </div>
+            <div class="mobile-icon">
+                <i class="fas fa-bars "></i>
+            </div>
             <nav class="nav">
-                <span class="navbtn" href="home">Home</span>
-                <span class="navbtn" href="home">About Us</span>
-                <span class="navbtn" href="home">Services</span>
-                <span class="navbtn" href="home">Portfolio</span>
-                <span class="navbtn" href="home">Blog</span>
-                <span class="navbtn" href="home">Contact</span>
+                <a class="navbtn" href="#home"><span>Home</span></a>
+                <a class="navbtn" href="#about"><span>About Us</span></a>
+                <a class="navbtn" href="#service"><span>Services</span></a>
+                <a class="navbtn" href="#portfolio"><span>Portfolio</span></a>
+                <a class="navbtn" href="#blog"><span>Blog</span></a>
+                <a class="navbtn" href="#contact"><span>Contact</span></a>
+                
             </nav>
         </div>     
     </header>
 
-    <div class="container">
-        <div class="HomeBK">
-            <div class="suzy1">
-                <img class="imgsuzy1" src="image/image-removebg-preview (2).png" />
-            </div>
-            <div class="HomeContent">
-                 <h3 class="hi">Hi There, I'm</h3>
-                <h1 class="name">Suzie Plakson</h1>
-                <h3 class="job">Freelance Designer/Developer</h3>
-                <div class="info">
-                    <div class="social"><img style="width: 1.3vw; height: 3vh;" src="image/facebook-logo.png" /></div> 
-                    <div class="social"><img style="width: 1.3vw; height: 3vh;" src="image/twitter.png" /></div> 
-                    <div class="social"><img style="width: 1.3vw; height: 3vh;" src="image/instagram.png" /></div> 
-                    <div class="social"><img style="width: 1.2vw; height: 2.8vh;" src="image/linkedin.png" /></div> 
-                    <div class="social"><img style="width: 1.3vw; height: 3vh;" src="image/pinterest-circular-logo-symbol.png" /></div>              
+    <section id="home">
+        <div class="container">
+            <div class="HomeBK"> 
+                <div class="suzy1">
+                    <img class="imgsuzy1" src="image/suzie1.png" />
+                </div>
+                <div class="HomeContent">
+                    <div class="content">
+                        <h3 class="hi">Hi There, I'm</h3>
+                        <h1 class="name">Suzie Plakson</h1>
+                        <h3 class="job">Freelance Designer/Developer</h3>
+                        <div class="info">
+                            <div class="social"><img style="width: 17px; height: 17px;" src="image/facebook-logo.png" /></div> 
+                            <div class="social"><img style="width: 17px; height: 17px;" src="image/twitter.png" /></div> 
+                            <div class="social"><img style="width: 17px; height: 17px;" src="image/instagram.png" /></div> 
+                            <div class="social"><img style="width: 17px; height: 17px;" src="image/linkedin.png" /></div> 
+                            <div class="social"><img style="width: 17px; height: 17px;" src="image/pinterest-circular-logo-symbol.png" /></div>              
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+    </section>
+        
 
-        <div class="AUBK">
+        <div id="about" class="AUBK">
             <div class="AUBK1">
-                <img class="imgsuzy2" src="image/image-removebg-preview (11).png" />
+                <div class="about-picture">
+                    <img class="imgsuzy2" src="image/suzie2.png" />
+                </div>
+                <div class="clear-fix"></div>
                 <div class="text">
                     <h1 class="texth1">
                         I Make a professional and creative design
@@ -69,7 +84,8 @@
                             <p class="chu">Positive Review's</p>
                         </div>
                     </div>
-                </div>   
+                </div>
+                 
             </div>
 
             <div style="background-color: rgba(250, 220, 218, 0.315);">
@@ -81,20 +97,20 @@
                         </p>
                         <div class="chart">
                             <div class="probar">
-                                <div class="filler">HTML5</div>
-                                <span class="tooltip">92%</span>
+                                <div class="filler1">HTML5</div>
+                                <span class="tooltip1">92%</span>
                             </div>
                             <div class="probar">
-                                <div class="filler">WordPress</div>
-                                <span class="tooltip">75%</span>
+                                <div class="filler2">WordPress</div>
+                                <span class="tooltip2">75%</span>
                             </div>
                             <div class="probar">
-                                <div class="filler">Magento</div>
-                                <span class="tooltip">86%</span>
+                                <div class="filler3">Magento</div>
+                                <span class="tooltip3">86%</span>
                             </div>
                             <div class="probar">
-                                <div class="filler">UI/UX</div>
-                                <span class="tooltip">88%</span>
+                                <div class="filler4">UI/UX</div>
+                                <span class="tooltip4">88%</span>
                             </div>
                         </div>
                     </div>
@@ -202,7 +218,7 @@
                 </div>
             </div>
 
-            <div class="service">
+            <div id="service" class="service">
                 <div class="serviceCon">
                     <div class="MyExp">
                         <h1 class="texth1">
@@ -266,7 +282,7 @@
                 </div>
             </div>
 
-            <div class="portfolio">
+            <div id="portfolio" class="portfolio">
                 <div class="serviceCon">
                     <div class="MyExp1">
                         <h1 class="texth1">
@@ -358,6 +374,67 @@
                         <p class="textp3">
                             I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.
                         </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio">
+                <div class="serviceCon">
+                    <div class="MyExp"> 
+                        <h1 class="texth1">Recent Articles</h1>
+                        <div class="hightlight5"></div>
+                        <p class="textp3">
+                            I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="serviceCon">
+                    <div class="MyExp">
+                        <h1 class="texth1">
+                            Get in touch
+                        </h1>
+                        <div class="hightlight4"></div>
+                        <p class="textp3">
+                            I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.
+                        </p>
+                    </div>
+
+                    <div class="form">
+                        <div class="form1">
+                            <h6>Say Hello</h6>
+                            <div class="subform1">
+                                <div class="subform1left">
+                                    <div class="groupform1">
+                                        <label class="textp1">Name (required)</label>
+                                        <input type="text" class="form-control" placeholder="Full name" required="">
+                                    </div>
+                                    
+                                    <div class="groupform1">
+                                        <label class="textp1">Email (required)</label>
+                                        <input type="text" class="form-control" placeholder="Email address" required="">
+                                    </div>
+
+                                    <div class="groupform1">
+                                        <label class="textp1">Subject (required)</label>
+                                        <input type="text" class="form-control" placeholder="Subject" required="">
+                                    </div>
+
+                                </div>
+
+                                <div class="subform1right">
+                                    <label class="textp1">Comment (required)</label>
+                                    <textarea rows="10" class="form-control" placeholder="Type comment" required=""></textarea>
+                                </div>
+                            </div>
+
+                            <button class="btnContact">Contact Us</button>
+                        </div>
+                        <div class="form2"></div>
                     </div>
                 </div>
             </div>
