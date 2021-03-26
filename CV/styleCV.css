@@ -35,7 +35,6 @@
 }
 .nav
 {
-    
     width: 45vw;
     display: flex;
     justify-content: space-between;
@@ -312,7 +311,7 @@
 }
 .LanSkill
 {
-    width: 30vw;
+    width: 90%;
     margin-left: 9vw;
 }
 .percent 
@@ -370,7 +369,7 @@
 
 .probar
 {
-    width: 33vw;
+    width: 90%;
     height: 4vh;
     background-color: white;
     position: relative;
@@ -1052,6 +1051,7 @@
     }
     .nav
     {
+        display: block;
         width: 50vw;
         margin-right: -15%;
         font-size: 16px;
@@ -1088,6 +1088,7 @@
     }
     .nav
     {
+
         width: 60vw;
         margin-right: none;
         padding-right: 5%;
@@ -1137,6 +1138,17 @@
         position: absolute;
         justify-content: center;
     }
+
+    .navbtn
+    {
+        width: fit-content;
+    }
+
+    .nav
+    {
+        margin-right: -8%;
+        padding-right: 0;
+    }
 }
 .mobile-icon
     {
@@ -1145,7 +1157,7 @@
         background-color: rgb(255, 97, 97);
         position: absolute;
         top: 30px;
-        right: 80px;
+        right: 10%;
         width:50px;
         height:50px;
         justify-content: center;
@@ -1157,15 +1169,75 @@
         display: table;
         clear: both;
     }
+
+.nav a{
+    display: inline-block;
+    text-align: center;
+}
+.nav{
+    margin-top: 25px;
+    display: block;
+}
 @media only screen and (max-width:768px)
 {
+    .suzie h1
+    {
+        margin-top: 30px;
+    }
     .mobile-icon
     {
         display: flex;
     }
+    .nav a
+    {
+        text-align: left;
+    }
     .nav
     {
         display: none;
+        margin-right: 3px;
+        margin-top: 80px;
+        width: fit-content;
+    }
+    .navbar
+    {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        padding-left:30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: white;
+        border: 1px solid var(--shadow-color);
+    }
+    .navbtn
+    {
+        display: flex;
+        justify-content: left;
+        text-transform: uppercase;
+        text-align: left; 
+        width: 455px;
+        border-bottom: 1px solid var(--shadow-color);
+        border-radius: 0;
+    }
+    .navbtn:nth-child(6)
+    {
+        display: flex;
+        justify-content: left;
+        text-align: left; 
+        width: 455px;
+        border-bottom: 1px solid transparent;
+        border-radius: 0;
+    }
+    .navbtn:hover
+    {
+        background-color: white;
+        color:rgb(255, 97, 97);
+        transition: all 0s;
+    }
+    .mobile-icon
+    {
+        right: 6.5%;
     }
     .HomeContent
     {
@@ -1191,7 +1263,46 @@
     }
     .imgsuzy2
     {
-        width: 510px;
+        width: 90%;
+    }
+    .AUBK2
+    {
+        /* margin-top: 5vw;
+        margin-left: 13vw; */
+        display: flex;
+        flex-direction: column;
+        /* width: 73vw;
+        margin-bottom: 6vw; */
+    }
+    .chart
+    {
+        /* margin-left: 30%; */
+        chiuj as, mà xem thử trên nớ t có set cứng bằng px hân :v set cứng chắc kh to lên được :v
+    }
+    .ExSkill
+    {
+        width: 90vw;
+    }
+    .LanSkill
+    {
+        margin-top: 30px;
+        margin-left: 0;
+        width: 90vw;
+    }
+    .percent
+    {
+        width:auto;
+    }
+    .o1{
+        width: auto;
+        height: 70px;
+    }
+    .circle
+    {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        margin-left: 7px;
     }
 }
 @media screen and (max-width:576px)
