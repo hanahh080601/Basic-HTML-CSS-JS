@@ -168,6 +168,7 @@ ul {
   color: var(--text-lb-color);
   font-size: 110%;
   margin-left: 0vw;
+  height: auto;
 }
 
 h3 {

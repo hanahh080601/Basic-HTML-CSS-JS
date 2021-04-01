@@ -22,12 +22,15 @@ function myFunction(e) {
             {
                 // alert("Nhập tên không chứa chữ số"); 
                 // text.innerHTML += '<span class="text">' + "Không nhập tên có chứa chữ số" ;'</span>';
-                text.innerText += "Hello";
+                text.innerText += "Nhập tên không được chứa chữ số!";
                 bk.classList.remove("bk-blur");
                 bk.classList.add("bk-blur1");
                 return;
             }
         }
+        text.innerText += "Bạn đã nhập thành công!";
+        bk.classList.remove("bk-blur");
+        bk.classList.add("bk-blur1");
         list.innerHTML += '<li>' + "Name: " + fullname.value + " Age: " + age.value ;'</li>';
     }
 }
