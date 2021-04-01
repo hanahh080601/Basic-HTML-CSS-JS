@@ -1,6 +1,6 @@
 :root
 {
-    --text-color: rgb(17, 11, 46);
+    --text-color: rgb(4, 22, 26);
     --main-color: rgb(255, 97, 97);
     --shadow-color: rgba(136, 136, 136, 0.274);
     --text-p-color:rgba(8, 5, 20, 0.63);
@@ -284,7 +284,7 @@
 .AUBK2
 {
     margin-top: 5vw;
-    margin-left: 13vw;
+    margin-left: 12vw;
     display: flex;
     flex-direction: row;
     width: 73vw;
@@ -307,7 +307,7 @@
 }
 .ExSkill
 {
-    width: 30vw;
+    width: 33vw;
 }
 .LanSkill
 {
@@ -324,7 +324,7 @@
 }
 .o1
 {
-    width: 220px;
+    width: 14.5vw;
     height:48px;
     display: flex;
     flex-direction: row;
@@ -345,8 +345,8 @@
 }
 .circle
 {
-    width: 3.3vw;
-    height: 3.3vw;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: var(--main-color);
     display: flex;
@@ -369,7 +369,7 @@
 
 .probar
 {
-    width: 90%;
+    width: 33vw;
     height: 4vh;
     background-color: white;
     position: relative;
@@ -473,7 +473,7 @@
     padding: 11px;
     position: absolute;
     z-index: 2;
-    left: 87.1%;
+    left: 87%;
     height: 2px;
     width: 15px;
     top:-10px;
@@ -502,7 +502,7 @@
 }
 .tooltip3
 {
-    left: 81.1%;
+    left: 81%;
     color: aliceblue;
     background-color: #131313;
     font-size: 20px;
@@ -521,7 +521,7 @@
 }
 .tooltip4
 {
-    left: 83.2%;
+    left: 83%;
     color: aliceblue;
     background-color: #131313;
     font-size: 20px;
@@ -655,18 +655,19 @@
     font-weight: 500;
     font-size: 12px;
     color: white;
-    width: 6.2vw;
+    width: 80px;
     height: 3.7vh;
     background-color: var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: -0.4vw;
+    padding-right:5px;
 }
 .icon
 {
-    width: 1.3vw;
-    height: 1.3vw;
+    width: 20px;
+    height: 20px;
 }
 .title 
 {
@@ -676,8 +677,8 @@
 }
 .circle1
 {
-    width: 3.3vw;
-    height: 3.3vw;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background-color: var(--main-color);
     display: flex;
@@ -831,12 +832,12 @@
 {
     transform: translate(0.3vw,-0.3vw);
     transition: 0.6s;
-    box-shadow: -0.6vw 0.6vw var(--main-color);
+    box-shadow: -8px 8px var(--main-color);
 }
 .o-ser-logo
 {
-    width: 5vw;
-    height: 5vw;
+    width: 77px;
+    height: 77px;
     background-color: var(--main-color);
     border-radius: 50%;
     display: flex;
@@ -968,9 +969,9 @@
 }
 .service:hover .hightlight4::before
 {
-    width: 680px;
+    width: 320px;
     transition: 0.7s;
-    left: 190px;
+    left: 380px;
 }
 
 .hightlight5::before
@@ -995,17 +996,66 @@
 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-
+    margin-bottom: 30px;
 }
 
 .form1
 {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    border: 1px solid var(--shadow-color);
+    padding-left: 25px;
+    box-shadow: 3px 3px 15px var(--shadow-color);
 }
-
+.form2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: 3px 3px 15px var(--shadow-color);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top:20px;
+    width: 77%;
+}
+.titleform2
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+.form2 > p
+{
+    font-size: 100%;
+    color: var(--text-p-color);
+}
+.text-contact
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color)
+}
+ul
+{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+li
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 28px;
+}
 .subform1
 {
     display: grid;
@@ -1017,11 +1067,14 @@
     font-size: 15px;
     font-weight: 400;
     color: var(--text-p-color);
-
+    margin-right: 200px;
+    margin-bottom: 15px;
+    margin-top: 7px;
     display: block;
-    width: 100%;
-    height: calc(1.5em + .75rem + 2px);
-    padding: .375rem .75rem;
+    width: 85%;
+    height: 30px;
+    /* height: calc(1.5em + .75rem + 2px); */
+    padding: .275rem .75rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -1029,19 +1082,175 @@
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: .35rem;
+    transition-property: border-color, box-shadow, border;
+    transition-duration: 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+}
+.form-control:focus
+{
+    outline: none;
+    border-color: black;
+    box-shadow: 1px 1px 8px var(--shadow-color);
+}
+
+textarea.form-control
+{
+    height: 200px;
 }
 .groupform1
 {
     display: flex;
     flex-direction: column;
+    margin-bottom: 8px;
 }
 .subform1right
 {
     display: flex;
     flex-direction: column ; 
 }
+
+h4
+{
+    font-size: 27px;
+    font-weight: bolder;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-left: -82%;
+    margin-bottom: 30px;
+}
+.btnContact
+{
+    height: 40px;
+    width: 97%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 7px;
+    color: white;
+    background-color: var(--main-color);
+    cursor: pointer;
+    border: none;
+    margin-left: -4%;
+    margin-bottom: 25px;
+}
+.btnContact:hover
+{
+    
+    background-color: var(--text-color);
+    transition: 0.5s;
+}
+
+.footer
+{
+    background-color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+.icon-footer
+{
+    color: white;
+    margin-left: 13%;
+    margin-top: 13px;
+}
+
+.icon-footer i
+{
+    margin-right: 13px;
+}
+
+.footer-text
+{
+    color: white;
+    margin-right: 15%;
+}
+.footer-text p
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+
+ /* cssssssssssssss */
+ img{
+    width: 100%;
+    height: auto;
+  }
+
+ ul{ list-style: none; }
+
+ .slick-slide{
+   overflow: hidden;
+ }
+ 
+ .carousel-container{
+   width: 584px;
+     height: 370px;
+     margin: 20px auto;
+     overflow: hidden;
+     position: relative;
+     /* border: 5px solid black; */
+ }
+ 
+ .slick-track{
+   width: 6000px;
+   display: flex;
+   transition: 0.1s;
+   transform: translateX(-584px);
+ }
+ 
+ .slick-dots{
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   margin: 0;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+ .slick-dots li{ margin: 0px 7px; }
+ .slick-dots button{
+   border: none;
+     border-radius: 50%;
+     background: #c3a7a7;
+     color: #c3a7a7;
+     width: 15px;
+     height: 15px;
+     cursor: pointer;
+     outline: none;
+     font-size: 0px;
+     transition: 0.25s;
+ }
+ 
+ .slick-arrow{
+   position: absolute;
+     display: block;
+     width: 30px;
+     height: 30px;
+     background: #ffecec;
+     top:45%;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 30px;
+     font-size: 25px;
+     color: #211616;
+     z-index: 20;
+ }
+ 
+ .slick-active button{
+   background: red;
+ }
+
+ /* csssssssssssss */
+
+
 @media only screen and (max-width:1200px)
 {
     .headd
@@ -1057,6 +1266,10 @@
         font-size: 16px;
         font-weight: 90%;
     }
+    .navbar
+    {
+        /* margin-left: -130px; */
+    }
     .navbtn
     {
         margin-right: 10px;
@@ -1067,15 +1280,106 @@
     }
     .AUBK1
     {
-        margin-left: 12vw;
-        width: 85vw;
+        margin-left: 5vw;
+        width: 93vw;
+    }
+    .texth1
+    {
+        padding-top: 5px;
+        font-size: 230%;
+    }
+    .textp1
+    {
+        font-size: 110%;
+    }
+    .text
+    {
+        width: 67vw;
     }
     .AUBK2
     {
         margin-top: 5vw;
         margin-left: 6vw;
-        width: 73vw;
+        width: 83vw;
         margin-bottom: 6vw;
+    }
+    .imgsuzy2
+    {
+        width: 90%;
+        height: 100%;
+        bottom: 0;
+        margin-left: 3vw;
+    }
+    .hightlight1::before
+{
+    content: "";
+    width: 0;
+    height: 2.7vh;
+    background-color: var(--hightlight-color);
+    position: absolute;
+    z-index: -1;
+    top:50px;
+}
+    .EXP:hover .hightlight1::before
+    {
+        width: 270px;
+        transition: 0.7s;
+        left: 287px;
+    }
+    .year
+    {
+        padding-right:5px;
+        margin-left: -5px;
+    }
+    .hightlight2::before
+{   
+        content: "";
+        width: 0;
+        height: 2.7vh;
+        background-color: var(--hightlight-color);
+        position: absolute;
+        z-index: -1;
+        top:50px;
+    }
+    .service:hover .hightlight2::before
+        {
+            width: 450px;
+            transition: 0.7s;
+            left: 195px;
+        }
+    .hightlight3::before
+    {
+        content: "";
+        width: 0;
+        height: 2.7vh;
+        background-color: var(--hightlight-color);
+        position: absolute;
+        z-index: -1;
+        top:50px;
+    }
+    .portfolio:hover .hightlight3::before
+    {
+        width: 290px;
+        transition: 0.7s;
+        left: 275px;
+        z-index: 0;
+    }
+    .o-ser
+    {
+        padding-right:15px;
+    }
+    .form1{
+        width: 700px;
+        margin-left: -110px;
+    }
+    .form2{
+        margin-left: 40px;
+    }
+    .icon-footer{
+        margin-left: 3%;
+    }
+    .footer-text{
+        margin-right: 3%;
     }
 }
 
@@ -1111,20 +1415,89 @@
     {
         font-size: 80%;
     }
+    .o{
+        margin-top: 3vh;
+    }
     .o-ser
     {
         width: 25vw;
         padding: none;
     }
-    .serviceTable
+    .o2{
+        width: auto;
+    }
+    .button{
+        width: auto;
+        padding: 6px 16px;
+    }
+    .service .serviceTable
     {
-        margin-left: -8%;
+        margin-left: -12%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+    .portfolio .serviceTable{
+        margin: 0;
+        margin-left: -12%;
+    }
+    .port-img{
+        width: 300px;
+        height: 300px;
     }
     .textp2
     {
         font-size: 95%;
     }
+    .textp3{
+        width: 82%;
+    }
+    .form1{
+        width: 530px;
+        padding-right: 10px;
+    }
 }
+
+@media only screen and (max-width:994px)
+{
+    .o-ser{
+        width: 280px;
+        height: 250px;
+        padding: 30px;
+        margin: 15px;
+    }
+    .serviceTable
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        /* margin-left: 5px; */
+    }
+    .sertitle{
+        margin-top: 20px;
+    }
+    .port-img {
+        width: 320px;
+        height: 320px;
+    }
+    .blur{
+        width: 80%;
+        height: 95%;
+    }
+    .service .serviceTable{
+        margin-left: 18%;
+        margin-right: 20%;
+        font-size: 110%;
+    }
+
+    .portfolio .serviceTable{
+        margin-left: 15%;
+        margin-right: 20%;
+    }
+    
+}
+
 @media screen and (max-width:992px)
 {
     .HomeBK
@@ -1178,6 +1551,7 @@
     margin-top: 25px;
     display: block;
 }
+
 @media only screen and (max-width:768px)
 {
     .suzie h1
@@ -1241,13 +1615,24 @@
     }
     .HomeContent
     {
-        padding-left: 10%;
-        /* box-sizing: border-box; */
-
+        padding: 0;
+        position: absolute;
+        margin-left: 30px;
+        width: 690px;
+        font-size: 16px;
+    }
+    .hi{
+        font-size: 28px;
+    }
+    .name{
+        font-size: 60px;
+    }
+    .job{
+        font-size: 25px;
     }
     .content
     {
-        font-size: 80%;
+        font-size: 10%;
         padding: 50px 45px;
         background: rgba(255, 255, 255, 0.8);
         display: flex;
@@ -1255,7 +1640,6 @@
         justify-content: space-between;
         align-items: center;
         height: 250px;
-
     }
     .HomeBK::after
     {
@@ -1265,23 +1649,53 @@
     {
         width: 90%;
     }
+    
+    .AUBK1
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text{
+        width: auto;
+    }
+    .o{
+        width: auto;
+    }
+    .sub-o{
+        width: 330px;
+    }
     .AUBK2
     {
-        /* margin-top: 5vw;
-        margin-left: 13vw; */
         display: flex;
         flex-direction: column;
-        /* width: 73vw;
-        margin-bottom: 6vw; */
     }
     .chart
     {
-        /* margin-left: 30%; */
-        chiuj as, mà xem thử trên nớ t có set cứng bằng px hân :v set cứng chắc kh to lên được :v
+        width: 90vw;
+    }
+    .probar
+    {
+        width: 88vw;
+    }
+    .tooltip1
+    {
+        left:87.5%
+    }
+    .tooltip2
+    {
+        left: 70.4%;
+    }
+    .tooltip3
+    {
+        left: 81.4%;
+    }
+    .tooltip4
+    {
+        left: 83.4%;
     }
     .ExSkill
     {
-        width: 90vw;
+        width: 87vw;
     }
     .LanSkill
     {
@@ -1304,8 +1718,218 @@
         margin-right: 10px;
         margin-left: 7px;
     }
+    .o2{
+        width: 300px;
+        margin: 15px;
+        padding: 30px 20px;
+        font-size: 16px;
+    }
+    .hireCon
+    {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .serviceTable
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        margin-left: 5px;
+    }
+    .o-ser{
+        width: 250px;
+        margin: 15px 15px;
+        padding: 20px 30px;
+    }
+    .service .serviceTable{
+        margin-left: 20%;
+        font-size: 110%;
+    }
+    .portfolio .serviceTable{
+        margin-left: 0;
+    }
+    .form
+    {
+        grid-template-columns: 1fr;
+    }
+    .form1{
+        width: 85vw;
+        margin: 0;
+        margin-left: -60px;
+        margin-bottom: 30px;
+    }
+    .form2{
+        width: 80vw;
+        margin: 0;
+        margin-left: -60px;
+    }
+    .footer-text{
+        margin-right: 5%;
+    }
+    .icon-footer{
+        margin-left: 5%;
+    }
 }
-@media screen and (max-width:576px)
+
+@media only screen and (max-width:751px)
 {
+    .HomeContent{
+        width: 500px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .hi{
+        font-size: 18px;
+    }
+    .job{
+        font-size: 18px;
+    }
+    .name{
+        font-size: 40px;
+    }
+    .jobexp
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* padding-left: 60px; */
+        padding: 0;
+        margin-left: 12%;
+        /* margin-right: 15%; */
+    }
+    .o2
+    {
+        width: 75%;
+        margin-bottom: 25px;
+        padding: 23px;
+    }
+    .textp3{
+        width: 70vw;
+        font-size: 16px;
+    }
+    .MyExp{
+        margin-bottom: 30px;
+    }
+    .year
+    {
+        margin-left: -6px;
+    }
+    .hire{
+        height: auto;
+    }
+    .hireCon{
+        padding: 50px 0;
+    }
     
+    .o-ser{
+        font-size: 95%;
+        padding: 30px 27px;
+        width: auto;
+        height: auto;
+        margin-bottom: 17px;
+        margin-right: 27px;
+        margin-left: 0;
+    }
+    .sertitle{
+        margin-top: 20px;
+    }
+    .port-img{
+        width: 230px;
+        height: 230px;
+    }
+    .portfolio-o{
+        margin: 5px 5px;
+    }
+    .serviceTable
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-right: 20%;
+        width: 98%;
+    }
+    .form
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .form1 
+    {
+        padding: 0;
+        width: 75vw;
+        margin: 0;
+        margin-bottom: 30px;
+        padding-right: -50px;
+    }
+    .form-control{
+        width: 98%;
+    }
+    .subform1
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 85%;
+        /* margin-left: -10%; */
+    }
+    .subform1left{
+        margin-left: -20px;
+    }
+    .subform1right{
+        margin-left: -20px;
+    }
+    h4 
+    {
+        margin-left:-70%;
+    }
+    .btnContact
+    {
+        width: 92%;
+        margin-left: 0px;
+    }
+    .form2{
+        width: 500px;
+        padding-top: 0;
+        margin: 0%;
+    } 
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .icon-footer{
+        margin-left: 40%;
+    }
+    .footer-text{
+        margin: 0;
+        margin-left: 33%;
+    }
+    .footer p{
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .HomeContent{
+        margin-left: 30px;
+    }
+    .service .serviceTable {
+        margin-left: -1%;
+        margin-right: -3%;
+        font-size: auto;
+    }
+    .o-ser{
+        margin: 0;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    h4{
+        margin-left: -65%;
+    }
+    .form2{
+        width: 360px;
+    }
+    .icon-footer{
+        margin-left: 35%;
+    }
+    .footer-text{
+        margin-left: 26%;
+    }
 }
