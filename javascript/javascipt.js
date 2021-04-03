@@ -14,6 +14,7 @@ function myFunction(e) {
     e.preventDefault();
     // console.log(fullname);
     // alert(fullname.innerText);
+    
     if(fullname.value != "" && age.value != "")
     {
         for(i = 0; i < fullname.value.length; i++)
