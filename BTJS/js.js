@@ -7,6 +7,10 @@ let bt2_4 = document.getElementById("btn2-4");
 let l2 = document.getElementById("list2"); 
 let bt3 = document.getElementById("btn3");
 let txt3 = document.getElementById("txt3");
+let bt4 = document.getElementById("btn4");
+let txt4 = document.getElementById("txt4");
+let bt5 = document.getElementById("btn5");
+let txt5 = document.getElementById("txt5");
 
 
 bt1.onclick = () => {
@@ -44,7 +48,12 @@ bt2_4.onclick = () => {
 bt3.onclick = () => {
     let number=txt3.value;
     check=true;
-           
+    if(txt3.value == "")
+    {
+        check = false; 
+        alert("Vui lòng nhập vào!")
+        return;
+    } 
     for(i=0;i<number.length-1;i++){
         for(j=i+1;j<number.length;j++){
             if(number[i]>number[j]) {
@@ -53,7 +62,6 @@ bt3.onclick = () => {
             }
         }
     }
-    alert(check);
     let promise=new Promise((resolve,reject)=>{
         if(check){
             resolve("Correct")
@@ -61,19 +69,43 @@ bt3.onclick = () => {
         else reject("Incorrect")
     })
     promise.then((message)=>{
-        re.innerText=message
+        alert(message)
     }).catch((error)=>{
-        re.innerText=error
+        alert(error)
     })
 }
 
-
-let s="";
-    for(i=0;i<txt3.value.length;i++){
-    if(txt3.value[i].charCodeAt()==32) {
-        s+=" ";
-        continue;
+bt4.onclick = () => {
+    if(txt4.value == "") {
+        alert("Vui lòng nhập vào!");
+        return;
     }
-    s+=(String.fromCharCode(txt3.value[i].charCodeAt()+1))
-  }
-  document.getElementById("text-resolve").innerText=s
+    var strArr=txt4.value.split("");
+    for(var i = 0; i < txt4.value.length; i++){
+        strArr[i]=String.fromCharCode(txt4.value.charCodeAt(i)+1);
+    }
+    alert(strArr.join(""));
+}
+
+bt5.onclick = () => {
+    if(txt5.value.length < 3){
+        alert("Độ dài của chuỗi phải >= 3")
+    }
+    else{
+        if(txt5.value.length%2==0){
+            alert("Độ dài của chuỗi phải là số lẻ!")
+        }
+        else {
+            let position = txt5.value.length / 2 + 0.5;
+            let s = txt5.value.slice(position - 2,position + 1)
+            alert("Chuỗi mới được tạo là: " + s);
+        }
+    }
+}
+
+
+
+
+
+
+
