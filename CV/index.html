@@ -7,23 +7,18 @@
     <title>Suzie.</title>
     <link rel="icon" href="image/image-removebg-preview (2).png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="styleCV.css">
+    <link rel="stylesheet" href="queries.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 </head>
 <body style="display: block; justify-content:center; margin: 0; padding:0;">
-    <script 
-        src="https://code.jquery.com/jquery-3.6.0.js" 
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
-        crossorigin="anonymous">
-    </script>
-    <script src="jquery.waypoints.min.js"></script>
-    <script src="scripts.js"></script> 
-    <script src="carousel.js"></script>
+     	
 <!-- here -->
-    <header class="header1">
+    <header id="header" class="header1">
         <div class="headd">
             <div class="suzie">
                 <h1>Suzie.</h1>
@@ -33,12 +28,12 @@
             </div>
             <nav class="nav">
                 <div class="navbar">
-                    <a class="navbtn" href="#home"><span>Home</span></a>
-                    <a class="navbtn" href="#about"><span>About Us</span></a>
-                    <a class="navbtn" href="#service"><span>Services</span></a>
-                    <a class="navbtn" href="#portfolio"><span>Portfolio</span></a>
-                    <a class="navbtn" href="#blog"><span>Blog</span></a>
-                    <a class="navbtn" href="#contact"><span>Contact</span></a>
+                    <a id="a-home" class="navbtn nav-scroll" href="#home"><span>Home</span></a>
+                    <a id="a-about" class="navbtn" href="#about"><span>About Us</span></a>
+                    <a id="a-service" class="navbtn" href="#service"><span>Services</span></a>
+                    <a id="a-portfolio" class="navbtn" href="#portfolio"><span>Portfolio</span></a>
+                    <a id="a-blog" class="navbtn" href="#blog"><span>Blog</span></a>
+                    <a id="a-contact" class="navbtn" href="#contact"><span>Contact</span></a>
                 </div>
                 
             </nav>
@@ -55,7 +50,7 @@
                     <div class="content">
                         <h3 class="hi">Hi There, I'm</h3>
                         <h1 class="name">Suzie Plakson</h1>
-                        <h3 class="job">Freelance Designer/Developer</h3>
+                        <h3 class="job">Freelance <span class="element"></span></h3>
                         <div class="info">
                             <div class="social"><img style="width: 17px; height: 17px;" src="image/facebook-logo.png" /></div> 
                             <div class="social"><img style="width: 17px; height: 17px;" src="image/twitter.png" /></div> 
@@ -135,19 +130,31 @@
                         </p>
                         <div class="percent">  
                             <div class="o1">
-                                <div class="circle">100%</div>
+                                <div class="circle">
+                                    <span class="counter">100</span>
+                                    <span>%</span>
+                                </div>
                                 <h3 class="country">German</h3>
                             </div> 
                             <div class="o1">
-                                <div class="circle">70%</div>
+                                <div class="circle">
+                                    <span class="counter">70</span>
+                                    <span>%</span>
+                                </div>
                                 <h3 class="country">Spanish</h3>
                             </div> 
                             <div class="o1">
-                                <div class="circle">90%</div>
+                                <div class="circle">
+                                    <span class="counter">90</span>
+                                    <span>%</span>
+                                </div>
                                 <h3 class="country">English</h3>
                             </div> 
                             <div class="o1">
-                                <div class="circle">50%</div>
+                                <div class="circle">
+                                    <span class="counter">50</span>
+                                    <span>%</span>
+                                </div>
                                 <h3 class="country">Latin</h3>
                             </div>                    
                         </div>
@@ -403,75 +410,96 @@
                              web services and online stores.
                         </p>
                     </div>
-
-                    <div class="carousel-container">
-                        <div class="slick-list">
-                            <div class="slick-track">
-
-                                <div id="lastClone" class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" 
-                                style="width: 584px;">
-                                    <div>
-                                        <a href="" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
-                                           <img class="image" src="image/portfolio-1.jpg" alt="">
-                                        </a>
+                    
+                    <!-- start -->
+                    <div class="slider-part">
+                    <div class="for-slick-slider">
+                        <div class="items">
+                        <div class="temp">
+                            <div class="content-slick">
+                                <i class="fas fa-quote-left"></i>
+                                <div class="slick-description">
+                                    <p>
+                                        I design and develop services for customers of all sizes, specializing in creating stylish, 
+                                        modern websites, web services and online stores. My passion is to design digital user experiences
+                                        through the bold interface and meaningful interactions.
+                                    </p>
+                                </div>
+                                <div class="name">
+                                    <h6>Nancy Byers</h6>
+                                    <div class="rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="rate-number">5.0</span>
                                     </div>
                                 </div>
-                
-                                <div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" 
-                                style="width: 584px;">
-                                    <div>
-                                        <a href="" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
-                                            <img class="image" src="image/portfolio-2.jpg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" 
-                                style="width: 584px;">
-                                    <div>
-                                        <a href="" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
-                                            <img class="image" src="image/portfolio-1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" 
-                                style="width: 584px;">
-                                    <div>
-                                        <a href="" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
-                                            <img class="image" src="image/portfolio-4.jpg" alt="">
-                                        </a>
-                                    </div>
-                                </div> -->
-                
-                                <div id="firstClone" class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" 
-                                style="width: 584px;">
-                                    <div>
-                                        <a href="" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
-                                            <img class="image" src="image/portfolio-2.jpg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
-        
-                        <ul class="slick-dots">
-                            <li class="slick-active">
-                                <button>1</button>
-                            </li>
-                            <li class="">
-                                <button>2</button>
-                            </li>
-                            
-                        </ul>
                     </div>
 
-
+                    <div class="items">
+                        <div class="temp">
+                            <div class="content-slick">
+                                <i class="fas fa-quote-left"></i>
+                                <div class="slick-description">
+                                    <p>
+                                        I design and develop services for customers of all sizes, specializing in creating stylish, 
+                                        modern websites, web services and online stores. My passion is to design digital user experiences
+                                        through the bold interface and meaningful interactions.
+                                    </p>
+                                </div>
+                                <div class="name">
+                                    <h6>Nancy Byers</h6>
+                                    <div class="rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="rate-number">5.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="items">
+                        <div class="temp">
+                            <div class="content-slick">
+                                <i class="fas fa-quote-left"></i>
+                                <div class="slick-description">
+                                    <p>
+                                        I design and develop services for customers of all sizes, specializing in creating stylish, 
+                                        modern websites, web services and online stores. My passion is to design digital user experiences
+                                        through the bold interface and meaningful interactions.
+                                    </p>
+                                </div>
+                                <div class="name">
+                                    <h6>Nancy Byers</h6>
+                                    <div class="rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="rate-number">5.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                        </div>   
+                    </div>
+                </div>
+                    <!-- end -->
                 </div>
             </div>
 
-            <div class="portfolio">
+            <div  id="blog" class="portfolio">
                 <div class="serviceCon">
                     <div class="MyExp"> 
                         <h1 class="texth1">Recent Articles</h1>
@@ -481,17 +509,94 @@
                         </p>
                     </div>
 
+                    <!-- start1 -->
+                    <div class="slider-part-1">
+                        <div class="for-slick-slider-1">
+                            
+                            <div class="items-1">
+                                <div class="content-slick-1">
+                                    <img class="img-blog" src="image/blog-1.jpg"/>
+                                    <div class="slick-description-1">
+                                        <h6>Prevent 75% of visitors from google analytics</h6>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui similique et 
+                                            aperiam in libero at minus nam excepturi nesciunt enim.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn-text"> -  Read More</a>
+                                </div>
+                            </div>
 
+                            <div class="items-1">
+                                <div class="content-slick-1">
+                                    <img class="img-blog" src="image/blog-2.jpg"/>
+                                    <div class="slick-description-1">
+                                        <h6>Prevent 75% of visitors from google analytics</h6>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui similique et 
+                                            aperiam in libero at minus nam excepturi nesciunt enim.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn-text"> -  Read More</a>
+                                </div>
+                            </div>
+
+                            <div class="items-1">
+                                <div class="content-slick-1">
+                                    <img class="img-blog" src="image/blog-3.jpg"/>
+                                    <div class="slick-description-1">
+                                        <h6>Prevent 75% of visitors from google analytics</h6>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui similique et 
+                                            aperiam in libero at minus nam excepturi nesciunt enim.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn-text"> -  Read More</a>
+                                </div>
+                            </div>
+
+                            <div class="items-1">
+                                <div class="content-slick-1">
+                                    <img class="img-blog" src="image/blog-4.jpg"/>
+                                    <div class="slick-description-1">
+                                        <h6>Prevent 75% of visitors from google analytics</h6>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui similique et 
+                                            aperiam in libero at minus nam excepturi nesciunt enim.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn-text"> -  Read More</a>
+                                </div>
+                            </div>
+
+                            <div class="items-1">
+                                <div class="content-slick-1">
+                                    <img class="img-blog" src="image/blog-5.jpg"/>
+                                    <div class="slick-description-1">
+                                        <h6>Prevent 75% of visitors from google analytics</h6>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa qui similique et 
+                                            aperiam in libero at minus nam excepturi nesciunt enim.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn-text"> -  Read More</a>
+                                </div>
+                            </div>
+        
+                        </div>   
+                    </div>
+                
+                    <!-- end1 -->
                 </div>
             </div>
 
-            <div class="service">
+            <div  id="contact" class="service">
                 <div class="serviceCon">
                     <div class="MyExp">
                         <h1 class="texth1">
                             Get in touch
                         </h1>
-                        <div class="hightlight4"></div>
+                        <div class="hightlight6"></div>
                         <p class="textp3">
                             I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.
                         </p>
@@ -569,7 +674,42 @@
         </div>
     </footer>
 
+    <script 
+        src="https://code.jquery.com/jquery-3.6.0.js" 
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+        crossorigin="anonymous">
+    </script>
     
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="scripts.js"></script> 
+ 
+    
+    
+
+    <!-- <script src="typed.js"></script>
+    <script>
+        var typed = new Typed('.element', {
+        strings: ['Designer', 'Developer'],
+        
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true
+    });
+    </script> -->
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed('.element', {
+        strings: ['Designer', 'Developer'],
+        
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true
+    });
+    </script>
 
 
 </body>
