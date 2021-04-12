@@ -49,7 +49,7 @@ window.onscroll = function(){
         {
             portfolio.classList.remove('nav-scroll');
         }
-        if(height > 5800 && height < 6850)
+        if(height > 5800 && height < 6550)
         {
             blog.classList.add('nav-scroll');   
         }
@@ -57,7 +57,7 @@ window.onscroll = function(){
         {
             blog.classList.remove('nav-scroll');  
         }
-        if(height > 6850)
+        if(height > 6550)
         {
             contact.classList.add('nav-scroll');
         }
@@ -85,8 +85,8 @@ $(document).ready(function(){
     $('.for-slick-slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
         dots: true,
     });
 });

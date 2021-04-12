@@ -1465,6 +1465,7 @@ h6
 {
     width: 23vw;
     border-radius: 5px;
+    cursor: pointer;
 }
 .slick-description-1
 {
@@ -1506,6 +1507,57 @@ h6
 {
     background-color: white;
     box-shadow: 3px 3px 15px var(--shadow-color);
+}
+
+.fa-facebook-f
+{
+    cursor: pointer;
+}
+.fa-facebook-f:hover
+{
+    color: var(--main-color);
+    transition: 0.2s;
+}
+
+.fa-twitter
+{
+    cursor: pointer;
+}
+.fa-twitter:hover
+{
+    color: var(--main-color);
+    transition: 0.2s;
+}
+
+.fa-instagram
+{
+    cursor: pointer;
+}
+.fa-instagram:hover
+{
+    color: var(--main-color);
+    transition: 0.2s;
+}
+
+.fa-linkedin-in
+{
+    cursor: pointer;
+}
+.fa-linkedin-in:hover
+{
+    color: var(--main-color);
+    transition: 0.2s;
+}
+
+.fa-pinterest
+{
+    cursor: pointer;
+}
+
+.fa-pinterest:hover
+{
+    color: var(--main-color);
+    transition: 0.2s;
 }
 
 
