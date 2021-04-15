@@ -16,12 +16,12 @@
   <form class="form" name="Form">
     <div class="column">
         <h4>Item name</h4>
-        <input class="nameitems" id="nameitem" type="text" name="fname">
+        <input class="nameitems" id="nameitem" type="text" name="fname" onchange="validateName(nameitems[0].value,0)">
         <span class="nameCheck"></span>
     </div>
     <div class="column">
         <h4>Category</h4>
-        <select name="category" class="listselect" id="category">
+        <select name="category" class="listselect" id="category" onclick="validateSelect(categories[0].value, 0)">
             <option value="No selected" selected>No selected</option>
             <option value="Category 1">Category 1</option>
             <option value="Category 2">Category 2</option>
@@ -32,7 +32,7 @@
     <div class="column" id="File">
         <input type="button" onclick="choosefilebtn(0)" id="choosefile" value="Choose file" class="choose"></input>
         <img class="img" id="img-first">
-        <input class="files" type="file" accept="image/png,image/jpeg" hidden>
+        <input class="files" type="file" accept="image/png,image/jpeg" hidden onchange="validateImage(images[0].src, 0)">
         <span class="imageCheck"></span>
     </div>
     <div class="column">

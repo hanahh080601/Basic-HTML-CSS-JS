@@ -3,6 +3,7 @@ let nameitems = document.getElementsByClassName("nameitems");
 let images = document.getElementsByClassName("img");
 let btn_submit = document.getElementsByClassName("submit");
 let categories = document.getElementsByClassName("listselect");
+let form = document.getElementsByClassName("form");
 let table = document.getElementById("table");
 let name_REQUIRED = document.getElementsByClassName("nameCheck");
 let select_REQUIRED = document.getElementsByClassName("categoryCheck");
@@ -21,6 +22,7 @@ let str;
 Showdata();
 change_image();
 
+
 function choosefilebtn(index) {
     input_files[index].click();
 }
@@ -36,6 +38,7 @@ function change_image() {
                     const result = reader.result;
                     str = result;
                     images[i].src = str;
+                    input_files[i].value = 'exist';
                 }
                 reader.readAsDataURL(filename);
             }
@@ -58,21 +61,28 @@ function validateName(value, index) {
         return false;
     }
     else {
+        name_REQUIRED[index].innerHTML = '';
         return true;
     }
 }
 
 
 function validateSelect(value, index) {
-    if (value == 'No selected') {
+    if (value == "No selected") 
+    {
         select_REQUIRED[index].innerHTML = 'Catogory is required';
         return false;
     }
-    return true;
+    else
+    {
+        select_REQUIRED[index].innerHTML = '';
+        return true;
+    }
+    
 }
 
 function validateImage(value, index){
-    if(value != "")
+    if(value.src != "")
     {
         image_REQUIRED[index].innerHTML = '';
         return true;
@@ -80,14 +90,18 @@ function validateImage(value, index){
     else 
     {
         image_REQUIRED[index].innerHTML = 'Image is required';
+        input_files[index].value = 'not exist';
         return false;
     }
 }
 
+
+
 function validateForm(index) {
 
-    if (validateName(nameitems[index].value, index) && validateSelect(categories[index].value, index) 
-    && validateImage(images[index].src, index)) {
+    if (validateName(nameitems[index].value, index) 
+    && validateSelect(categories[index].value, index) 
+    && validateImage(images[index], index)) {
         return true;
     }
     else 
@@ -98,8 +112,6 @@ function validateForm(index) {
 
 function onclickSubmit(i) {
     if (validateForm(i)) {
-        name_REQUIRED[i].innerHTML = '';
-        select_REQUIRED[i].innerHTML = '';
         let listArray;
         let data = {};
         data.name = nameitems[i].value;
@@ -152,11 +164,12 @@ function Showdata() {
         newtrtag += `<tr>
         <td>${index + 1}</td>
         <td>
-            <input class="nameitems" type="text" value = "${element.name}">
+            <input class="nameitems" type="text" value = "${element.name}" onchange="validateName(nameitems[${index + 1}].value,${index + 1})">
             <span class="nameCheck"></span>
         </td>
         <td >
-            <select class= "listselect" disabled >
+            <select class= "listselect" disabled onchange="validateSelect(categories[${index + 1}].value, ${index + 1})">
+                <option value="No selected" selected>No selected</option>
                 <option value="Category 1">Category 1</option>
                 <option value="Category 2">Category 2</option>
                 <option value="Category 3">Category 3</option>
@@ -166,7 +179,7 @@ function Showdata() {
         <td>
             <input type="button" onclick="choosefilebtn(${index + 1})" class="btn-choosefile" value="Choose file"></input>
             <img class="img" src=${element.src} alt="">
-            <input class="files" type="file" hidden>
+            <input class="files" type="file" hidden onchange="validateImage(images[index], index)">
             <span class="imageCheck"></span>
         </td>
         <td>
