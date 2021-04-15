@@ -1,0 +1,204 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 1vw;
+    background-color:rgb(252, 231, 206);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border-bottom : 1px solid rgb(202, 198, 198);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+#table
+{
+    color: brown;
+}
+
+.form {
+   background-color: rgba(255, 168, 168, 0.473);
+   padding-bottom: 20px;
+   padding-top: 15px;
+   padding-left: 50px;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   margin-bottom: 20px;
+   border: 5px solid salmon;
+   border-radius: 10px;
+   color: brown;
+}
+
+.form .column {
+    width: 50%;
+}
+
+#nameitem {
+    outline: none;
+    border: 1px solid rgb(202, 198, 198);
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+    pointer-events: auto;
+}
+
+.nameCheck, .categoryCheck, .imageCheck{
+    color: red;
+    font-size: 0.9rem;
+    display: block;
+    height: 0.5rem;
+}
+
+.table select {
+    outline: none;
+    border: 1px solid rgb(202, 198, 198);
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.choose 
+{
+    display: block;
+    background-color: salmon;
+    width: 43%;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color:brown;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#submit
+{
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    /* background-color: rgb(0, 110, 255); */
+    background-color: rgb(255, 88, 70);
+    margin-right: 10px;
+    padding: 7px 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.submit:focus
+{
+    background-color: rgb(9, 218, 103);
+    width: 20%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#img-first {
+    width: 150px;
+    height: 75px;
+    display: inline-block;
+}
+
+.img {
+    width: 100px;
+    height: 50px;
+    vertical-align: middle;
+    object-fit:cover;
+}
+
+.nameitems {
+    pointer-events: none;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(202, 198, 198);
+    padding: 5px;
+    margin-top: 10px;
+    width: 70%;
+    color:rgba(255, 77, 77, 0.856);
+}
+
+.listselect
+{
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(202, 198, 198);
+    padding: 5px;
+    margin-top: 10px;
+    width: 70%;
+    color:rgba(255, 77, 77, 0.856);
+}
+
+
+.btn-edit {
+    width: 20%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    background-color:rgb(73, 137, 255);
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.btn-delete {
+    width: 20%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    background-color:rgb(255, 52, 52);
+    margin-right: 30px;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.btn-choosefile {
+    display: none;
+    cursor: pointer;
+    background-color:rgba(255, 144, 144, 0.808);
+    width: 43%;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.Cancel {
+    background-color:rgb(100, 100, 100);
+}
