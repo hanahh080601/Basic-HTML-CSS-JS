@@ -31,7 +31,25 @@
 {
     width: fit-content;
     font-family: 'Rubik', sans-serif;
+    position: relative;
+}
+.suzie a
+{
     cursor: pointer;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.suzie::after
+{
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    cursor: pointer;
+    top: 40px;
+    right: -8px;
+    position: absolute;
 }
 .nav
 {
@@ -1179,6 +1197,7 @@ h4
     border: none;
     margin-left: -4%;
     margin-bottom: 25px;
+    outline: none;
 }
 .btnContact:hover
 {
@@ -1222,48 +1241,6 @@ h4
     color: white;
 }
 
-/* start */
-/* .slider-part .slick-list 
-{
-    width: 100%;
-    height: 85%;
-    margin-bottom: 10vh;
-    left: 1vw;
-}
-.for-slick-slider
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 17vh;
-}
-.items
-{
-    width: 80%;
-    margin-right: 0;
-    margin-top: 15px;
-    outline: none;
-    height: 5vh;
-}
-.slick-slide
-{
-    width: auto;
-}
-
-.content-slick
-{
-    width: 70%;
-    font-family: 'Rubik', sans-serif;
-    background-color: white;
-    padding: 10px 47px;
-    box-shadow: 3px 3px 15px rgb(211, 208, 208);
-    position: relative;
-    margin-right: 0;
-    height: 30vh;
-} */
 .slider-part .slick-list 
 {
     width: 101%;
@@ -1367,7 +1344,6 @@ h6
     content: "";
     width: 10px;
     height: 10px;
-    /* visibility: visible; */
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
@@ -1393,7 +1369,6 @@ h6
     width: 10px;
     height: 10px;
     background-color:var(--bk-color);
-    /* visibility: visible; */
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
@@ -1502,7 +1477,9 @@ h6
     font-weight: 500;
     color: var(--main-color);
     margin-top: 2vh;
+    outline: none;
 }
+
 .bk-head
 {
     background-color: white;
