@@ -16,8 +16,6 @@ let header = '<tr>'
     +'<th>Image</th>'
     +'<th>Action</th>'
     +'</tr>'
-const checkNumber= /^[^0-9]{0,20}$/i;
-let str;
 
 Showdata();
 change_image();
@@ -27,6 +25,7 @@ function choosefilebtn(index) {
     input_files[index].click();
 }
 
+let str;
 function change_image() {
 
     for (let i = 0; i < input_files.length; i++) {
@@ -56,7 +55,7 @@ function validateName(value, index) {
         name_REQUIRED[index].innerHTML = 'Item name has less than 10 characters!'
         return false;
     }
-    else if (!checkNumber.test(value)) {
+    else if (value.substr(0,1) >= '0' && value.substr(0,1) <= '9') {
         name_REQUIRED[index].innerHTML = 'Item name must not start with number!'
         return false;
     }
@@ -65,7 +64,6 @@ function validateName(value, index) {
         return true;
     }
 }
-
 
 function validateSelect(value, index) {
     if (value == "No selected") 
@@ -96,7 +94,6 @@ function validateImage(value, index){
 }
 
 
-
 function validateForm(index) {
 
     if (validateName(nameitems[index].value, index) 
@@ -117,7 +114,7 @@ function onclickSubmit(i) {
         data.name = nameitems[i].value;
         data.src = images[i].src;
         data.select = categories[i].value;
-        let getLocalstore = localStorage.getItem("ListInfo");
+        let getLocalstore = localStorage.getItem("Records");
         if (getLocalstore == null) {
             listArray = [];
         }
@@ -133,7 +130,7 @@ function onclickSubmit(i) {
             categories[i].style['pointer-events'] = 'none';
             nameitems[i].style['pointer-events'] = 'none';
         }
-        localStorage.setItem("ListInfo", JSON.stringify(listArray));
+        localStorage.setItem("Records", JSON.stringify(listArray));
         Showdata();
     }
 }
@@ -153,7 +150,7 @@ btn_submit[0].addEventListener("click", function() {
 
 function Showdata() {
     let listArray;
-    let getLocalstore = localStorage.getItem("ListInfo");
+    let getLocalstore = localStorage.getItem("Records");
     if (getLocalstore == null) {
         listArray = [];
     } else {
@@ -219,10 +216,10 @@ function Delete(index) {
         Showdata();
     }
     else{  
-        let getLocalStorageData = localStorage.getItem("ListInfo");
+        let getLocalStorageData = localStorage.getItem("Records");
         listArray = JSON.parse(getLocalStorageData);
         listArray.splice(index, 1);
-        localStorage.setItem("ListInfo", JSON.stringify(listArray));
+        localStorage.setItem("Records", JSON.stringify(listArray));
         Showdata()
     }
 }
