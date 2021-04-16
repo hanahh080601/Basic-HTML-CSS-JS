@@ -16,7 +16,7 @@ let header = '<tr>'
     +'<th>Image</th>'
     +'<th>Action</th>'
     +'</tr>'
-
+let test = /^[ ]*$/i
 Showdata();
 change_image();
 
@@ -46,16 +46,16 @@ function change_image() {
 }
 
 function validateName(value, index) {
-    if(value == "")
+    if(value.trim() == "")
     {
         name_REQUIRED[index].innerHTML = 'Item name is required!';
         return false;
     }
-    else if (value.length >= 10){
+    else if (value.trim().length >= 10){
         name_REQUIRED[index].innerHTML = 'Item name has less than 10 characters!'
         return false;
     }
-    else if (value.substr(0,1) >= '0' && value.substr(0,1) <= '9') {
+    else if (value.trim().substr(0,1) >= '0' && value.trim().substr(0,1) <= '9') {
         name_REQUIRED[index].innerHTML = 'Item name must not start with number!'
         return false;
     }
@@ -80,21 +80,18 @@ function validateSelect(value, index) {
 }
 
 function validateImage(value, index){
-    if(validateFileType(input_files[index].value, index))
-    {
-        image_REQUIRED[index].innerHTML = '';
-        return true;
-    }
-    else
-    {
-        // image_REQUIRED[index].innerHTML = 'Image is required';
-        input_files[index].value = 'not exist';
-        return false;
-    }
     if(value.src != "")
     {
-        image_REQUIRED[index].innerHTML = '';
-        return true;
+        if(validateFileType(input_files[index].value, index))
+        {
+            image_REQUIRED[index].innerHTML = '';
+            return true;
+        } 
+        else
+        {
+            image_REQUIRED[index].innerHTML = "Only jpg/jpeg and png files are allowed!";
+            return false;
+        }    
     }
     else 
     {
@@ -102,6 +99,17 @@ function validateImage(value, index){
         input_files[index].value = 'not exist';
         return false;
     }
+    if(validateFileType(input_files[index].value, index))
+    {
+        image_REQUIRED[index].innerHTML = '';
+        return true;
+    }
+    else
+    {
+        image_REQUIRED[index].innerHTML = "Only jpg/jpeg and png files are allowed!";
+        input_files[index].value = 'not exist';
+        return false;
+    }  
 }
 
 function validateFileType(value, index){
@@ -111,17 +119,18 @@ function validateFileType(value, index){
         return true;
     }
     else{
-        image_REQUIRED[index].innerHTML = "Only jpg/jpeg and png files are allowed!";
         return false;
     }   
 }
 
 
-function validateForm(index) {
-
-    if (validateName(nameitems[index].value, index) 
-    && validateSelect(categories[index].value, index) 
-    && validateImage(images[index], index)) {
+function validateForm(index) 
+{
+    validateName(nameitems[index].value, index);
+    validateSelect(categories[index].value, index);
+    validateImage(images[index], index);
+    if (validateName(nameitems[index].value, index) && validateSelect(categories[index].value, index) && validateImage(images[index], index)) 
+    {
         return true;
     }
     else 
@@ -181,7 +190,7 @@ function Showdata() {
         newtrtag += `<tr>
         <td>${index + 1}</td>
         <td>
-            <input class="nameitems" type="text" value = "${element.name}" onchange="validateName(nameitems[${index + 1}].value,${index + 1})">
+            <input class="nameitems" type="text" value = "${element.name}" oninput="validateName(nameitems[${index + 1}].value,${index + 1})">
             <span class="nameCheck"></span>
         </td>
         <td >
