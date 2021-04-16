@@ -80,6 +80,17 @@ function validateSelect(value, index) {
 }
 
 function validateImage(value, index){
+    if(validateFileType(input_files[index].value, index))
+    {
+        image_REQUIRED[index].innerHTML = '';
+        return true;
+    }
+    else
+    {
+        // image_REQUIRED[index].innerHTML = 'Image is required';
+        input_files[index].value = 'not exist';
+        return false;
+    }
     if(value.src != "")
     {
         image_REQUIRED[index].innerHTML = '';
@@ -91,6 +102,18 @@ function validateImage(value, index){
         input_files[index].value = 'not exist';
         return false;
     }
+}
+
+function validateFileType(value, index){
+    var idxDot = value.lastIndexOf(".") + 1;
+    var extFile = value.substr(idxDot, value.length).toLowerCase();
+    if (extFile=="jpg" || extFile=="jpeg" || extFile=="png"){
+        return true;
+    }
+    else{
+        image_REQUIRED[index].innerHTML = "Only jpg/jpeg and png files are allowed!";
+        return false;
+    }   
 }
 
 
@@ -135,7 +158,6 @@ function onclickSubmit(i) {
     }
 }
 
-// add event submit for btn submit
 btn_submit[0].addEventListener("click", function() {
     onclickSubmit(0);
     if(validateForm(0))
@@ -145,8 +167,6 @@ btn_submit[0].addEventListener("click", function() {
         images[0].removeAttribute("src");
     }
 })
-
-
 
 function Showdata() {
     let listArray;
@@ -176,7 +196,7 @@ function Showdata() {
         <td>
             <input type="button" onclick="choosefilebtn(${index + 1})" class="btn-choosefile" value="Choose file"></input>
             <img class="img" src=${element.src} alt="">
-            <input class="files" type="file" hidden onchange="validateImage(images[index], index)">
+            <input class="files" type="file" accept="image/png,image/jpeg" hidden onchange="validateImage(images[index], index)">
             <span class="imageCheck"></span>
         </td>
         <td>
