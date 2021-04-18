@@ -124,11 +124,13 @@ function validateFileType(value, index){
 }
 
 
-function validateForm(index) 
+function validateForm(index, edit) 
 {
     validateName(nameitems[index].value, index);
     validateSelect(categories[index].value, index);
     validateImage(images[index], index);
+   if( edit == 0) 
+   {
     if (validateName(nameitems[index].value, index) && validateSelect(categories[index].value, index) && validateImage(images[index], index)) 
     {
         return true;
@@ -137,10 +139,21 @@ function validateForm(index)
     {
         return false;
     }
+   }
+   else {
+    if (validateName(nameitems[index].value, index) && validateSelect(categories[index].value, index) ) 
+    {
+        return true;
+    }
+    else 
+    {
+        return false;
+    }
+   }
 }
 
-function onclickSubmit(i) {
-    if (validateForm(i)) {
+function onclickSubmit(i, edit) {
+    if (validateForm(i,edit)) {
         let listArray;
         let data = {};
         data.name = nameitems[i].value;
@@ -168,8 +181,8 @@ function onclickSubmit(i) {
 }
 
 btn_submit[0].addEventListener("click", function() {
-    onclickSubmit(0);
-    if(validateForm(0))
+    onclickSubmit(0,0);
+    if(validateForm(0,0))
     {
         nameitems[0].value="";
         categories[0].value = "No selected";
@@ -234,7 +247,7 @@ function Edit(index) {
         change_image();
     }
     else {
-        onclickSubmit(index);
+        onclickSubmit(index,1);
     }
 }
 
