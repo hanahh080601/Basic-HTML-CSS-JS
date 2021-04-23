@@ -98,7 +98,7 @@
 {
     background-color: var(--main-color);
     color: white;
-    transition: 0.5s;
+    transition: 1s;
 }
 .mobile-icon
 {

@@ -1,3 +1,13 @@
+:root
+{
+    --text-color: rgb(4, 22, 26);
+    --main-color: rgb(255, 97, 97);
+    --shadow-color: rgba(136, 136, 136, 0.274);
+    --text-p-color:rgba(8, 5, 20, 0.63);
+    --hightlight-color:rgba(255, 0, 43, 0.178);
+    --bk-color:rgba(250, 220, 218, 0.315);
+}
+
 @media only screen and (min-width:1201px){
     .html{
         font-size: 16px;
@@ -1026,6 +1036,8 @@
         border-radius: 0;
         padding-left: 0;
         margin-right: 0;
+        background-color: white;
+        color: var(--text-color);
     }
     .navbtn:nth-child(6)
     {
@@ -1313,7 +1325,6 @@
         width: 100%;
         height: 100%;
     }
-}
 @media only screen and (max-width:688px){
     .HomeContent{
         margin-left: 8%;
@@ -1383,7 +1394,6 @@
     {
         left: 81%;
     }
-    
 }
 @media only screen and (max-width:612px){
     .HomeContent{
@@ -1500,4 +1510,235 @@
         height: 35px;
         padding: 0px 17px;
     }
+}
+
+@media only screen and (max-width:576px){
+    html{
+        overflow-x: hidden;
+    }
+    .headd{
+        margin: 0;
+        width: 90%;
+    }
+    .suzie::after{
+        top: 30px;
+    }
+    .mobile-icon{
+        right: 5%;
+    }
+    .navbar{
+        width: 400px;
+        transform: translateX(7%);
+    }
+    .navbtn{
+        width: 370px;
+    }
+    .navbtn:nth-child(6){
+        width: 350px;
+    }
+    .HomeContent{
+        transform: translateX(-12%);
+    }
+    .content{
+        width: 100%;
+        height: 40vh;
+    }
+    .hi, .job{
+        font-size: 18px;
+    }
+    .name{
+        font-size: 35px;
+    }
+    .suzy1{
+        width: fit-content;
+    }
+    .text{
+        width: 90%;
+    }
+    .imgsuzy2{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .AUBK2{
+        width: 90%;
+    }
+    .probar{
+        margin-bottom: 20px;
+    }
+    .o1{
+        height: 60px;
+    }
+    .MyExp{
+        width: 90%;
+    }
+    .textp3{
+        width: 100%;
+    }
+    .jobexp{
+        width: 90%;
+        transform: translateX(-2%);
+    }
+    .serviceCon{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .serviceCon .MyExp{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .serviceCon .serviceTable {
+        margin: 0 auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .o-ser{
+        width: 93%;
+    }
+    .o-ser:nth-child(6){
+        height: auto;
+    }
+    .textp2{
+        width: 95%;
+    }
+    .MyExp1{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .portfolio-o{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .port-img {
+        width: 98%;
+        height: 98%;
+    }
+    .blur{
+        width: 91%;
+        height: 93%;
+    }
+    .port-text
+    {
+        font-size: 160%;
+        margin: 5%;
+    }
+    .plus
+    {
+        width: 13%;
+        height: 13%;
+    }
+    .form{
+        width: 90%;
+    }
+    .form1{
+        padding: 0;
+        width: 100%;
+    }
+    .subform1{
+        width: 90%;
+    }
+    .groupform1{
+        margin-bottom: 20px;
+    }
+    .form-control{
+        margin-right: 0;
+        width: 93%;
+        height: 30px;
+    }
+    .btnContact{
+        width: 90%;
+        transform: translateX(8px);
+    }
+    .form2{
+        margin: 0;
+        width: 90%;
+    }
+    .icon-footer i{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .footer-text p{
+        margin-top: 5px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:540px){
+    .HomeContent{
+        transform: translateX(-16%);
+    }
+    .content{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .HomeContent{
+        margin-left: 12%;
+        transform: translateX(-10%);
+    }
+    .content{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:440px){
+    .HomeContent{
+        margin-left: 10%;
+        transform: translateX(-6%);
+    }
+    .content{
+        width: 80%;
+        padding: 50px 15px;
+    }
+}
+
+@media only screen and (max-width:370px){
+    .HomeContent{
+        margin-left: 10%;
+        transform: translateX(-4%);
+    }
+    .content{
+        width: 60%;
+        padding: 50px 35px;
+        line-height: 40px;
+    }
+    .name{
+        text-align: center;
+    }
+    .jobexp{
+        margin: 0 auto;
+        transform: none;
+    }
+    .o2{
+        width: 83%;
+        padding: 23px 23px;
+    }
+    .texth1{
+        text-align: center;
+    }
+    .o-ser{
+        width: 89%;
+    }
+    .form1 h4{
+        margin-left: -55%;
+    }
+    .subform1{
+        width: 80%;
+    }
+    .form-control{
+        width: 90%;
+    }
+    .btnContact{
+        width: 80%;
+    }
+    .form2{
+        width: 84%;
+    }
+}
+
+@media only screen and (max-width:245px){
+
 }
