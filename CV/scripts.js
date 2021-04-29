@@ -5,6 +5,12 @@ let service = document.getElementById('a-service');
 let portfolio = document.getElementById('a-portfolio');
 let blog = document.getElementById('a-blog');
 let contact = document.getElementById('a-contact');
+let slider = document.getElementById('slider');
+const progress = document.querySelectorAll('.progress-done');
+const tooltip1 = document.querySelectorAll('.tooltip1');
+const counters = document.querySelectorAll('.counter');
+const numbers = document.querySelectorAll('.so');
+const loading = document.getElementById('loading'); 
 
 function getOffset(el) {
     const rect = el.getBoundingClientRect();
@@ -20,9 +26,40 @@ let heightPort = getOffset(document.getElementById("portfolio")).top;
 let heightBlog = getOffset(document.getElementById("blog")).top; 
 let heightCon = getOffset(document.getElementById("contact")).top; 
 
+let check = false;
+function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      obj.innerHTML = Math.floor(progress * (end - start) + start);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+    check = true;
+  }
+ setTimeout(function(){
+     loading.style.opacity = 0;
+     loading.style.zIndex = -10;
+    //  loading.style.display = none;
+ },1000)
+
 window.onscroll = function(){ 
     let height = window.pageYOffset;
-        // console.log(a);
+        if(height >= heightAbout - 100 && check == false) {
+            for(let i = 0; i < 4; i++)
+            {
+                progress[i].style.width = progress[i].getAttribute('data-done') + '%';
+            }
+            counters.forEach(function(counter){
+                animateValue(counter, 0, counter.getAttribute('data-TargetNum'), 2500);
+            })
+            numbers.forEach(function(num){
+                animateValue(num, 0, num.getAttribute('data-Number'), 5000);
+            })
+        }
         if(height < 100)
         {
             head.classList.remove("bk-head");
@@ -104,15 +141,45 @@ $('a').click(function(event){
 $('.for-slick-slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    //autoplay: true,
+    //autoplaySpeed: 2000,
     dots: true,
+    responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },   
+      ]
 });
 
 $('.for-slick-slider-1').slick({
         slidesToShow: 3,
         slidesToScroll: 2,
         dots: true,
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                dots: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+              },
+            
+            
+          ]
     });
 
-
+  

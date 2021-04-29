@@ -14,9 +14,17 @@
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="loading-bar/dist/loading-bar.css">
 </head>
-<body style="display: block; justify-content:center; margin: 0; padding:0;">
-     	
+
+<body>
+
+    
+<!-- aloooooooooooooooo -->
+<div id="loading" class="loading">
+    <div class="lds-dual-ring"></div>
+</div>
+<!-- aloooooooooooooooo -->
 <!-- here -->
     <header id="header" class="header1">
         <div class="headd">
@@ -71,7 +79,7 @@
                 </div>
                 <div class="clear-fix"></div>
                 <div class="text">
-                    <h1 class="texth1">
+                    <h1 class="texth11">
                         I Make a professional and creative design
                     </h1>
                     <p class="textp1">
@@ -85,11 +93,11 @@
                     </p>
                     <div class="o">
                         <div class="sub-o">
-                            <h1 class="so">115</h1>
+                            <h1 class="so" data-Number="115"></h1>
                             <p class="chu">Completed Projects</p>
                         </div>
                         <div class="sub-o">
-                            <h1 class="so">120</h1>
+                            <h1 class="so" data-Number="120"></h1>
                             <p class="chu">Positive Review's</p>
                         </div>
                     </div>
@@ -105,21 +113,28 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
                         </p>
                         <div class="chart">
-                            <div class="probar">
-                                <div class="filler1">HTML5</div>
-                                <span class="tooltip1">92%</span>
+                            <div class="progress">
+                                <div class="progress-done" data-done="92">
+                                HTML5  <span class="tooltip1">92%</span>
+                                </div>
                             </div>
-                            <div class="probar">
-                                <div class="filler2">WordPress</div>
-                                <span class="tooltip2">75%</span>
+
+                            <div class="progress">
+                                <div class="progress-done" data-done="75">
+                                    WordPress  <span class="tooltip1">75%</span>
+                                </div>
                             </div>
-                            <div class="probar">
-                                <div class="filler3">Magento</div>
-                                <span class="tooltip3">86%</span>
+
+                            <div class="progress">
+                                <div class="progress-done" data-done="86">
+                                    Magento  <span class="tooltip1">86%</span>
+                                </div>
                             </div>
-                            <div class="probar">
-                                <div class="filler4">UI/UX</div>
-                                <span class="tooltip4">88%</span>
+
+                            <div class="progress">
+                                <div class="progress-done" data-done="88">
+                                    UI/UX <span class="tooltip1">88%</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -131,28 +146,28 @@
                         <div class="percent">  
                             <div class="o1">
                                 <div class="circle">
-                                    <span class="counter">100</span>
+                                    <span id="value" class="counter" data-TargetNum = "100">0</span>
                                     <span>%</span>
                                 </div>
                                 <h3 class="country">German</h3>
                             </div> 
                             <div class="o1">
                                 <div class="circle">
-                                    <span class="counter">70</span>
+                                    <span id="value" class="counter" data-TargetNum = "70">0</span>
                                     <span>%</span>
                                 </div>
                                 <h3 class="country">Spanish</h3>
                             </div> 
                             <div class="o1">
                                 <div class="circle">
-                                    <span class="counter">90</span>
+                                    <span id="value" class="counter" data-TargetNum = "90"></span>
                                     <span>%</span>
                                 </div>
                                 <h3 class="country">English</h3>
                             </div> 
                             <div class="o1">
                                 <div class="circle">
-                                    <span class="counter">50</span>
+                                    <span id="value" class="counter" data-TargetNum = "50"></span>
                                     <span>%</span>
                                 </div>
                                 <h3 class="country">Latin</h3>
@@ -167,7 +182,6 @@
                     <h1 class="texth1">
                         My Experience
                     </h1>
-                    <div class="hightlight1"></div>
                     <p class="textp3">
                         I design and develop services for customers of all sizes, specializing in creating stylish, modern websites,
                          web services and online stores.
@@ -239,7 +253,7 @@
                         I Am Available For Freelance
                     </h1>
                     <button class="button">
-                        Hire Me Now
+                        <a href="#contact">Hire Me Now</a>
                     </button>
                 </div>
             </div>
@@ -250,7 +264,6 @@
                         <h1 class="texth1">
                             Creative Digital Agency
                         </h1>
-                        <div class="hightlight2"></div>
                         <p class="textp3">
                             I design and develop services for customers of all sizes, specializing in creating stylish, modern websites,
                              web services and online stores.
@@ -321,7 +334,6 @@
                         <h1 class="texth1">
                             I Love What I Do
                         </h1>
-                        <div class="hightlight3"></div>
                         <p class="textp3">
                             I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, 
                             web services and online stores.
@@ -398,13 +410,12 @@
                 </div>
             </div>
 
-            <div class="service">
+            <div id="service2" class="service">
                 <div class="serviceCon">
                     <div class="MyExp">
                         <h1 class="texth1">
                             What people say about us?
                         </h1>
-                        <div class="hightlight4"></div>
                         <p class="textp3">
                             I design and develop services for customers of all sizes, specializing in creating stylish, modern websites,
                              web services and online stores.
@@ -412,10 +423,10 @@
                     </div>
                     
                     <!-- start -->
-                    <div class="slider-part">
-                    <div class="for-slick-slider">
+                    <!-- <div class="slider-part"> -->
+                    <div id="slider" class="for-slick-slider">
                         <div class="items">
-                        <div class="temp">
+                        <!-- <div class="temp"> -->
                             <div class="content-slick">
                                 <i class="fas fa-quote-left"></i>
                                 <div class="slick-description">
@@ -438,10 +449,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
 
                     <div class="items">
-                        <div class="temp">
+                        <!-- <div class="temp"> -->
                             <div class="content-slick">
                                 <i class="fas fa-quote-left"></i>
                                 <div class="slick-description">
@@ -464,10 +475,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 
                     <div class="items">
-                        <div class="temp">
+                        <!-- <div class="temp"> -->
                             <div class="content-slick">
                                 <i class="fas fa-quote-left"></i>
                                 <div class="slick-description">
@@ -490,11 +501,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
             
                         </div>   
                     </div>
-                </div>
+                <!-- </div> -->
                     <!-- end -->
                 </div>
             </div>
@@ -503,7 +514,6 @@
                 <div class="serviceCon">
                     <div class="MyExp"> 
                         <h1 class="texth1">Recent Articles</h1>
-                        <div class="hightlight5"></div>
                         <p class="textp3">
                             I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.
                         </p>
@@ -596,7 +606,6 @@
                         <h1 class="texth1">
                             Get in touch
                         </h1>
-                        <div class="hightlight6"></div>
                         <p class="textp3">
                             I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.
                         </p>
@@ -685,6 +694,7 @@
     crossorigin="anonymous"></script>
     <script src="jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="loading-bar/dist/loading-bar.js"></script>
     <script src="scripts.js"></script> 
  
     

@@ -1,7 +1,7 @@
 :root
 {
     --text-color: rgb(4, 22, 26);
-    --main-color: rgb(255, 97, 97);
+    --main-color: #f9564f;
     --shadow-color: rgba(136, 136, 136, 0.274);
     --text-p-color:rgba(8, 5, 20, 0.63);
     --hightlight-color:rgba(255, 0, 43, 0.178);
@@ -21,7 +21,6 @@
     }
     .nav{
         width: auto;
-        margin-top: 18px;
     }
     .navbtn
     {
@@ -55,13 +54,6 @@
         width: 83vw;
         margin-bottom: 6vw;
     }
-    .imgsuzy2
-    {
-        width: 90%;
-        height: 100%;
-        bottom: 0;
-        margin-left: 1vw;
-    }
     .o1{
         width: auto;
     }
@@ -72,166 +64,58 @@
     }
     .slick-list
     {
-        width: 85vw;
-        left: -5vw;
+        width: 76vw;
+        left: -1vw;
         height: 40vh;
 
     }
+
     .items{
-        margin-left: 0.87%;
-        margin-top: 15px;
         width: 100%;
-    }
-    .content-slick
-    {
-        padding: 20px 45px;
     }
 
     .slick-slide
     {
         float:none;
     }
-    .slick-dots{
-        margin-top: 0;
-        margin-left: 4%;
-        margin-right: -4%;
-    }
+
     .form{
         font-size: 70%;
     }
+
     .form1{
         height: fit-content;
         width: auto;
         margin-right: 20px;
     }
+
     .form2{
-        height: fit-content;
+        height: auto;
         font-size: 127%;
     }
+
     .titleform2{
         font-size: 24px;
     }
+
     .text-contact{
         font-size: 17.6px;
     }
+
     .icon-footer{
         margin-left: 14%;
     }
+
     .icon-footer{
         margin-left: 13%;
     }
+
     .footer-text{
         margin-right: 12%;
     }
-
-    .hightlight1::before
-    {
-        top:50px;
-    }
-    .EXP:hover .hightlight1::before
-    {
-        width: 25%;
-        left: 37%;
-    }
-
-    .hightlight2::before
-    {
-        top:50px;
-    }
-    .service:hover .hightlight2::before
-    {
-        /* width: 440px;
-        left: 320px; */
-        width: 40%;
-        left: 30%;
-    }
-    .hightlight3::before
-    {
-        top:50px;
-    }
-    .portfolio:hover .hightlight3::before
-    {
-        /* width: 300px;
-        left: 380px; */
-        width: 30%;
-        left: 35%;
-        z-index: 0;
-    }
-    .hightlight4::before
-    {
-        top:50px;
-    }
-    .service:hover .hightlight4::before
-    {
-        /* width: 500px;
-        left: 280px; */
-        width: 46%;
-        left: 27%;
-    }
-
-    .hightlight5::before
-    {
-        top:50px;
-    }
-    .portfolio:hover .hightlight5::before
-    {
-        width: 27%;
-        left: 37%;
-        /* width: 300px;
-        left: 390px; */
-        z-index: 0;
-    }
-
-    .hightlight6::before
-    {
-        top:50px;
-    }
-    .service:hover .hightlight6::before
-    {
-        /* width: 240px;
-        left: 420px; */
-        width: 21%;
-        left: 39%;
-        z-index: 0;
-    }
-
-    /* .tooltip1
-    {
-        left:85%;
-    }
-    .tooltip2
-    {
-        left:68%;
-    }
-    .tooltip3
-    {
-        left:79%;
-    }
-    .tooltip4
-    {
-        left:81%;
-    } */
 }
 
 @media only screen and (max-width:1200px){
-
-    
-    .tooltip1
-    {
-        left:85%;
-    }
-    .tooltip2
-    {
-        left:68%;
-    }
-    .tooltip3
-    {
-        left:79%;
-    }
-    .tooltip4
-    {
-        left:81%;
-    }
 
     .headd{
         width: 90%;
@@ -239,8 +123,6 @@
     }
     .nav{
         width: auto;
-        margin-top: 18px;
-        margin-right: 0;
     }
     .navbtn
     {
@@ -253,7 +135,6 @@
         width: auto;
     }
     .suzy1{
-        /* top: -10px; */
         bottom: 0;
     }
     .texth1
@@ -269,12 +150,6 @@
     {
         width: 48vw;
         margin-left: 1.3vw;
-    }
-    .imgsuzy2{
-        width: 85%;
-        height: 100%;
-        bottom: 0;
-        margin-left:0;
     }
     .AUBK2{
         font-size: 30%;
@@ -385,66 +260,11 @@
     .footer-text{
         margin-right: 14%;
     }
-
-    .hightlight1::before
+    
+    .suzie::after
     {
-        top:35px;
-    }
-    .EXP:hover .hightlight1::before
-    {
-        width: 220px;
-        left: 310px;
-    }
-
-    .hightlight2::before
-    {
-        top:35px;
-    }
-    .service:hover .hightlight2::before
-    {
-        width: 350px;
-        left: 245px;
-    }
-    .hightlight3::before
-    {
-        top:47px;
-    }
-    .portfolio:hover .hightlight3::before
-    {
-        width: 280px;
-        left: 275px;
-        z-index: 0;
-    }
-    .hightlight4::before
-    {
-        top:40px;
-    }
-    .service:hover .hightlight4::before
-    {
-        width: 400px;
-        left: 220px;
-    }
-
-    .hightlight5::before
-    {
-        top:40px;
-    }
-    .portfolio:hover .hightlight5::before
-    {
-        width: 240px;
-        left: 300px;
-        z-index: 0;
-    }
-
-    .hightlight6::before
-    {
-        top:40px;
-    }
-    .service:hover .hightlight6::before
-    {
-        width: 180px;
-        left: 330px;
-        z-index: 0;
+        top: 75%;
+        right: -10%;
     }
 }
 @media only screen and (max-width:1070px){
@@ -457,7 +277,6 @@
     }
     .nav{
         width: auto;
-        margin-top: 18px;
         margin-right: 5%;
     }
     .AUBK1{
@@ -473,10 +292,6 @@
     {
         margin-left: 6vw;
     }
-    .imgsuzy2
-    {
-        width: 80%;
-    }
     .sub-o
     {
         height: auto;
@@ -487,91 +302,10 @@
         margin-top: 60px;
     }
 
-    .hightlight1::before
-    {
-        top:40px;
-    }
-    .EXP:hover .hightlight1::before
-    {
-        width: 230px;
-        left: 260px;
-    }
-    .hightlight2::before
-    {
-        top:40px;
-    }
-    .service:hover .hightlight2::before
-    {
-        width: 360px;
-        left: 200px;
-    }
-    .hightlight3::before
-    {
-        top:50px;
-    }
-    .portfolio:hover .hightlight3::before
-    {
-        width: 280px;
-        left: 230px;
-        z-index: 0;
-    }
-    .hightlight4::before
-    {
-        top:40px;
-    }
-    .service:hover .hightlight4::before
-    {
-        width: 400px;
-        left: 170px;
-    }
-
-    .hightlight5::before
-    {
-        top:40px;
-    }
-    .portfolio:hover .hightlight5::before
-    {
-        width: 250px;
-        left: 250px;
-        z-index: 0;
-    }
-
-    .hightlight6::before
-    {
-        top:40px;
-    }
-    .service:hover .hightlight6::before
-    {
-        width: 200px;
-        left: 280px;
-        z-index: 0;
-    }
-
-    .tooltip1
-    {
-        left:84%;
-    }
-    .tooltip2
-    {
-        left:67%;
-    }
-    .tooltip3
-    {
-        left:78%;
-    }
-    .tooltip4
-    {
-        left:80%;
-    }
-
     .slider-part-1 .slick-list
     {
         left: -5vw;
         width: 110%;
-    }
-    .items-1
-    {
-        margin-right: 1.3vw;
     }
     .temp
     {
@@ -586,8 +320,6 @@
     .content-slick
     {
         width: 83%;
-        margin: 25px 43px;
-        font-size: 80%;
     }
     .slick-description p 
     {
@@ -595,7 +327,6 @@
     }
     .items
     {
-        margin-left: 30px;
         width: 100%;
     }
 
@@ -614,18 +345,20 @@
     .suzie{
         font-size: 70%;
     }
+    
     .nav{
         margin: 0;
         font-size: 14px;
     }
     .imgsuzy1{
-        margin-left: -20%;
+        /* margin-left: -20%; */
+        margin-left: 15%
     }
     .hi, .job{
-        font-size: 20px;
+        font-size: 27px;
     }
     .name{
-        font-size: 45px;
+        font-size: 53px;
     }
     .social{
         width: 30px;
@@ -640,11 +373,6 @@
     }
     .AUBK1{
         margin-left: 30px;
-        height: 80vh;
-    }
-    .imgsuzy2{
-        /* margin-left: 5px; */
-        width: 99%;
     }
     .text{
         width: 100%;
@@ -701,51 +429,6 @@
     {
         width: 50%;
     }
-    .probar
-    {
-        width: 35vw;
-        height: 3vh;
-    }
-    .filler1
-    {
-        height: 3vh;
-    }
-    .filler2
-    {
-        height: 3vh;
-    }
-    .filler3
-    {
-        height: 3vh;
-    }
-    .filler4
-    {
-        height: 3vh;
-    }
-    .tooltip1
-    {
-        height: 0.1vh;
-        left: 84%;
-        bottom: 10px;
-    }
-    .tooltip2
-    {
-        height: 0.1vh;
-        left: 67%;
-        bottom: 10px;
-    }
-    .tooltip3
-    {
-        height: 0.1vh;
-        left: 78%;
-        bottom: 10px;
-    }
-    .tooltip4
-    {
-        height: 0.1vh;
-        left: 80%;
-        bottom: 10px;
-    }
     .textp3{
         font-size: 14px;
         width: 50vw;
@@ -769,7 +452,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-        /* margin-left: 5px; */
     }
     .sertitle{
         margin-top: 20px;
@@ -815,183 +497,15 @@
         margin-right: 12%;
     }
 
-    .EXP:hover .hightlight1::before
+    .suzie::after
     {
-        width: 220px;
-        left: 240px;
-    }
-
-    .service:hover .hightlight2::before
-    {
-        width: 350px;
-        left: 170px;
-    }
-
-    .portfolio:hover .hightlight3::before
-    {
-        width: 300px;
-        left: 200px;
-        z-index: 0;
-    }
-
-    .service:hover .hightlight4::before
-    {
-        width: 420px;
-        left: 140px;
-    }
-
-    .portfolio:hover .hightlight5::before
-    {
-        width: 240px;
-        left: 230px;
-        z-index: 0;
-    }
-    .service:hover .hightlight6::before
-    {
-        width: 200px;
-        left: 250px;
-        z-index: 0;
+        top: 50%;
+        right: -15%;
     }
 }
-@media only screen and (max-width:900px){
-    .form{
-        margin-left: -11%;
-    }
 
-    .EXP:hover .hightlight1::before
-    {
-        width: 210px;
-        left: 210px;
-    }
-
-    .service:hover .hightlight2::before
-    {
-        width: 350px;
-        left: 140px;
-    }
-
-    .portfolio:hover .hightlight3::before
-    {
-        width: 290px;
-        left: 170px;
-        z-index: 0;
-    }
-
-    .service:hover .hightlight4::before
-    {
-        width: 390px;
-        left: 120px;
-    }
-
-    .portfolio:hover .hightlight5::before
-    {
-        width: 230px;
-        left: 200px;
-        z-index: 0;
-    }
-    .service:hover .hightlight6::before
-    {
-        width: 190px;
-        left: 220px;
-        z-index: 0;
-    }
-    .tooltip1
-    {
-        left: 83%;
-    }
-    .tooltip2
-    {
-        left: 66%;
-    }
-    .tooltip3
-    {
-        left: 77%;
-    }
-    .tooltip4
-    {
-        left: 79%;
-    }
-
-}
-@media only screen and (max-width:840px){
-    .form{
-        margin-left: -15%;
-    }
-    .imgsuzy2
-    {
-        width: 98%;
-    }
-    .serviceTable
-    {
-        margin-left: 10%;
-    }
-
-    .EXP:hover .hightlight1::before
-    {
-        width: 210px;
-        left: 190px;
-    }
-
-    .service:hover .hightlight2::before
-    {
-        width: 350px;
-        left: 120px;
-    }
-
-    .portfolio:hover .hightlight3::before
-    {
-        width: 290px;
-        left: 150px;
-        z-index: 0;
-    }
-
-    .service:hover .hightlight4::before
-    {
-        width: 390px;
-        left: 100px;
-    }
-
-    .portfolio:hover .hightlight5::before
-    {
-        width: 230px;
-        left: 180px;
-        z-index: 0;
-    }
-    .service:hover .hightlight6::before
-    {
-        width: 190px;
-        left: 200px;
-        z-index: 0;
-    }
-    .tooltip1
-    {
-        left: 82%;
-    }
-    .tooltip2
-    {
-        left: 65%;
-    }
-    .tooltip3
-    {
-        left: 76%;
-    }
-    .tooltip4
-    {
-        left: 78%;
-    }
-}
-@media only screen and (max-width:810px){
-    .form{
-        margin-left: -12%;
-    }
-    .form1{
-        width: auto;
-    }
-}
-@media only screen and (max-width:792px){
-    .headd{
-        width: 70%;
-    }
+@media only screen and (max-width: 991px) {
+    /* nav start here */
     .mobile-icon
     {
         display: flex;
@@ -1010,7 +524,7 @@
     {
         display: none;
         margin-right: 0px;
-        margin-top: 12%;
+        margin-top: 6%;
         width: fit-content;
         transform: translateX(-80px);
     }
@@ -1051,9 +565,52 @@
     .navbtn:hover
     {
         background-color: white;
-        color:rgb(255, 97, 97);
+        color: var(--main-color);
         transition: all 0s;
     }
+    .HomeBK::after
+    {
+        content: none;
+    } 
+    .content
+    {
+        padding: 13%;
+        background: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .form{
+        margin-left: -11%;
+    }
+}
+@media only screen and (max-width:840px){
+    .form{
+        margin-left: -15%;
+    }
+    .serviceTable
+    {
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width:810px){
+    .form{
+        margin-left: -12%;
+    }
+    .form1{
+        width: auto;
+    }
+}
+@media only screen and (max-width:792px){
+    .headd{
+        width: 70%;
+    }
+
     .HomeBK
     {
         flex-direction: column;
@@ -1070,10 +627,6 @@
         width: 550px;
         font-size: 16px;
     }
-    .HomeBK::after
-    {
-        content: none;
-    }
     .hi, .job{
         font-size: 23px;
     }
@@ -1082,7 +635,7 @@
     }
     .content
     {
-        padding: 50px 45px;
+        padding: 13%;
         background: rgba(255, 255, 255, 0.8);
         display: flex;
         flex-direction: column;
@@ -1095,10 +648,6 @@
     }
     .imgsuzy1{
         margin-left: 0;
-    }
-    .imgsuzy2
-    {
-        width: 90%;
     }
     
     .AUBK
@@ -1126,10 +675,6 @@
     .so{
         margin: 0;
     }
-    .imgsuzy2{
-        width: 70%;
-        margin-left: 15%;
-    }
     .AUBK2
     {
         display: flex;
@@ -1150,7 +695,9 @@
     }
     .o1{
         width: auto;
-        margin-right: 0;
+        margin-left: 0;
+        margin-right: 5%;
+        padding: 5%;
     }
     .MyExp{
         font-size: 65%;
@@ -1205,14 +752,11 @@
     {
         display: grid;
         grid-template-columns: 1fr;
-        width: 70%;
-        margin-left: 8%;
-        margin-right: 8%;
+        margin-left: auto;
     }
     .form1{
         margin: 0;
         margin-bottom: 20px;
-        width: 98%;
     }
     .form-control{
         font-size: 14px;
@@ -1222,7 +766,6 @@
     }
     .form2{
         margin: 0 auto;
-        width: 93%;
     }
     .text-contact{
         font-size: 14px;
@@ -1244,66 +787,12 @@
         font-size: 12px;
         font-weight: 300;
     }
-
-    .EXP:hover .hightlight1::before
+    .chart
     {
-        width: 210px;
-        left: 170px;
-    }
-
-    .service:hover .hightlight2::before
-    {
-        width: 350px;
-        left: 100px;
-    }
-    .hightlight3::before
-    {
-        top: 40px;
-    }
-
-    .portfolio:hover .hightlight3::before
-    {
-        width: 240px;
-        left: 160px;
-        z-index: 0;
-    }
-
-    .service:hover .hightlight4::before
-    {
-        width: 390px;
-        left: 80px;
-    }
-
-    .portfolio:hover .hightlight5::before
-    {
-        width: 230px;
-        left: 160px;
-        z-index: 0;
-    }
-    .service:hover .hightlight6::before
-    {
-        width: 190px;
-        left: 180px;
-        z-index: 0;
-    }
-    .tooltip1
-    {
-        left: 86.5%;
-    }
-    .tooltip2
-    {
-        left: 69.5%;
-    }
-    .tooltip3
-    {
-        left: 80.5%;
-    }
-    .tooltip4
-    {
-        left: 82.5%;
+        width: 100%;
     }
 }
-@media only screen and (max-width:767px){
+@media only screen and (max-width:768px){
     .jobexp
     {
         display: grid;
@@ -1325,7 +814,25 @@
         width: 100%;
         height: 100%;
     }
+    .content-slick-1
+    {
+        width: 85%;
+        margin: 8vw;
+    }
+    .for-slick-slider-1 .slick-dots li:last-child:before
+    {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        visibility: visible;
+        border: 0.5px solid black;
+        position: absolute;
+        cursor: pointer;
+    }
+}
 @media only screen and (max-width:688px){
+
     .HomeContent{
         margin-left: 8%;
     }
@@ -1341,58 +848,20 @@
     .footer-text{
         margin-right: 12%;
     }
-    .EXP:hover .hightlight1::before
-    {
-        width: 230px;
-        left: 130px;
+}
+@media only screen and (max-width:669px){
+    .form1{
+        padding-left: 20px;
+        padding-right: 10px;
     }
-
-    .service:hover .hightlight2::before
-    {
-        width: 350px;
-        left: 70px;
+    .form-control{
+        /* margin-right: 0;
+        width: 155px; */
+        margin-right: 40px;
+        width: 75%;
     }
-
-    .portfolio:hover .hightlight3::before
-    {
-        width: 240px;
-        left: 120px;
-        z-index: 0;
-    }
-
-    .service:hover .hightlight4::before
-    {
-        width: 390px;
-        left: 50px;
-    }
-
-    .portfolio:hover .hightlight5::before
-    {
-        width: 230px;
-        left: 130px;
-        z-index: 0;
-    }
-    .service:hover .hightlight6::before
-    {
-        width: 190px;
-        left: 150px;
-        z-index: 0;
-    }
-    .tooltip1
-    {
-        left: 85%;
-    }
-    .tooltip2
-    {
-        left: 68%;
-    }
-    .tooltip3
-    {
-        left: 79%;
-    }
-    .tooltip4
-    {
-        left: 81%;
+    .subform1right .form-control{
+        margin-right: 0;
     }
 }
 @media only screen and (max-width:612px){
@@ -1458,9 +927,6 @@
         width: 90%;
         margin-top: 25px;
     }
-    .form2{
-        width: 84%;
-    }
     .text-contact{
         width: 80%;
     }
@@ -1480,22 +946,6 @@
         margin-top: 2px;
         font-size: 11px;
         font-weight: 400;
-    }
-    .tooltip1
-    {
-        left: 84.5%;
-    }
-    .tooltip2
-    {
-        left: 67.3%;
-    }
-    .tooltip3
-    {
-        left: 78.5%;
-    }
-    .tooltip4
-    {
-        left: 80.5%;
     }
     .o1
     {
@@ -1554,10 +1004,6 @@
     }
     .text{
         width: 90%;
-    }
-    .imgsuzy2{
-        width: 90%;
-        margin-left: 5%;
     }
     .AUBK2{
         width: 90%;
@@ -1648,12 +1094,10 @@
         height: 30px;
     }
     .btnContact{
-        width: 90%;
         transform: translateX(8px);
     }
     .form2{
         margin: 0;
-        width: 90%;
     }
     .icon-footer i{
         margin-top: 10px;
@@ -1662,6 +1106,15 @@
     .footer-text p{
         margin-top: 5px;
         font-size: 14px;
+    }
+    .content-slick
+    {
+        width: 73%;
+        margin: 7%;
+    }
+    .rate 
+    {
+        margin-bottom: 11vw;
     }
 }
 
@@ -1682,6 +1135,10 @@
     .content{
         width: 80%;
     }
+    .year
+    {
+        margin-left: -1.4vw;
+    }
 }
 
 @media only screen and (max-width:440px){
@@ -1691,22 +1148,24 @@
     }
     .content{
         width: 80%;
-        padding: 50px 15px;
+        padding: 13% 4%;
     }
 }
+@media only screen and (max-width: 414px){
+    
+}
+@media only screen and (max-width: 411px){
 
-@media only screen and (max-width:370px){
+}
+@media only screen and (max-width:375px){
     .HomeContent{
         margin-left: 10%;
         transform: translateX(-4%);
     }
     .content{
-        width: 60%;
-        padding: 50px 35px;
+        width: 60vw;
+        padding: 10% 10%;
         line-height: 40px;
-    }
-    .name{
-        text-align: center;
     }
     .jobexp{
         margin: 0 auto;
@@ -1734,11 +1193,19 @@
     .btnContact{
         width: 80%;
     }
-    .form2{
-        width: 84%;
+}
+@media only screen and (max-width:360px){}
+@media only screen and (max-width:334px){
+    .sub-o
+    {
+        padding: 3% 6%;
     }
 }
 
-@media only screen and (max-width:245px){
-
+@media only screen and (max-width:280px){
+    .sub-o
+    {
+        padding: 5% 7%;
+        margin-right: 5%;
+    }
 }
