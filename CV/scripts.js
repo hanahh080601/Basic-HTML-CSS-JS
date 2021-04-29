@@ -12,6 +12,12 @@ const counters = document.querySelectorAll('.counter');
 const numbers = document.querySelectorAll('.so');
 const loading = document.getElementById('loading'); 
 
+let heightAbout = getOffset(document.getElementById("about")).top; 
+let heightSer = getOffset(document.getElementById("service")).top; 
+let heightPort = getOffset(document.getElementById("portfolio")).top; 
+let heightBlog = getOffset(document.getElementById("blog")).top; 
+let heightCon = getOffset(document.getElementById("contact")).top; 
+let heightSkill = getOffset(document.querySelector(".AUBK2")).top;
 function getOffset(el) {
     const rect = el.getBoundingClientRect();
     return {
@@ -20,14 +26,14 @@ function getOffset(el) {
     };
 }
 
-let heightAbout = getOffset(document.getElementById("about")).top; 
-let heightSer = getOffset(document.getElementById("service")).top; 
-let heightPort = getOffset(document.getElementById("portfolio")).top; 
-let heightBlog = getOffset(document.getElementById("blog")).top; 
-let heightCon = getOffset(document.getElementById("contact")).top; 
+setTimeout(function(){
+    loading.style.opacity = 0;
+    loading.style.zIndex = -10;
+},1000)
 
-let check = false;
-function animateValue(obj, start, end, duration) {
+
+let check1 = false;
+function animateValue1(obj, start, end, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
@@ -38,26 +44,41 @@ function animateValue(obj, start, end, duration) {
       }
     };
     window.requestAnimationFrame(step);
-    check = true;
+    check1 = true;
   }
- setTimeout(function(){
-     loading.style.opacity = 0;
-     loading.style.zIndex = -10;
-    //  loading.style.display = none;
- },1000)
+
+  let check2 = false;
+function animateValue2(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      obj.innerHTML = Math.floor(progress * (end - start) + start);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+    check2 = true;
+  }
+
 
 window.onscroll = function(){ 
     let height = window.pageYOffset;
-        if(height >= heightAbout - 100 && check == false) {
+        if(height >= heightAbout - 200 && check1 == false) {
+            numbers.forEach(function(num){
+                animateValue1(num, 0, num.getAttribute('data-Number'), 2000);
+            })
+            
+        }
+        if(height >= heightSkill - 350 && check2 == false)
+        {
             for(let i = 0; i < 4; i++)
             {
                 progress[i].style.width = progress[i].getAttribute('data-done') + '%';
             }
             counters.forEach(function(counter){
-                animateValue(counter, 0, counter.getAttribute('data-TargetNum'), 2500);
-            })
-            numbers.forEach(function(num){
-                animateValue(num, 0, num.getAttribute('data-Number'), 5000);
+                animateValue2(counter, 0, counter.getAttribute('data-TargetNum'), 2000);
             })
         }
         if(height < 100)
