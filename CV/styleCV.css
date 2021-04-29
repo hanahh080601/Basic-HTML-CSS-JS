@@ -117,12 +117,14 @@ html{
     background-color: rgb(255, 97, 97);
     position: absolute;
     top: 30px;
-    right: 10%;
+    /* transform: translateX(80%); */
+    right: 13vw;
     width:40px;
     height:40px;
     justify-content: center;
     align-items: center;
     display: none;
+    /* here */
 }
 .container
 {
@@ -160,12 +162,12 @@ html{
 .HomeContent
 {
     padding-top:30vh;
-    /* padding-left:1vw; */
+    padding-left:1vw;
     margin-top: 7vh;
     display: flex;
     flex-direction: column;
     height: 10vh;
-    z-index: 5;
+    z-index: 5; 
     padding-left: 53%;
 }
 .hi 

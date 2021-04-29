@@ -71,7 +71,7 @@ window.onscroll = function(){
             })
             
         }
-        if(height >= heightSkill - 350 && check2 == false)
+        if(height >= heightSkill - 380 && check2 == false)
         {
             for(let i = 0; i < 4; i++)
             {

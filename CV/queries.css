@@ -341,15 +341,101 @@
 @media only screen and (max-width:992px){
     .headd{
         margin-left: 0;
+        width: 75%;
     }
     .suzie{
         font-size: 70%;
     }
-    
-    .nav{
+     /* nav start here */
+     .mobile-icon
+     {
+         display: flex;
+         /* aloooo */
+         margin: -0.5em 0.5em;
+         /* right: 13.5%;
+         top: 18%; */
+     }
+     .navbtn
+     {
+         width: fit-content;
+     }
+     .nav a
+     {
+         text-align: left;
+     }
+     .nav
+     {
+        display: none;
+        margin-right: 0px;
+        margin-top: 6%;
+        width: fit-content;
         margin: 0;
         font-size: 14px;
+     }
+     .navbar
+     {
+         width: 700px;
+         display: flex;
+         flex-direction: column;
+         padding-left:15px;
+         padding-top: 8px;
+         padding-bottom: 8px;
+         background-color: white;
+         border: 1px solid var(--shadow-color);
+         transform: translate(-7%, 10%);
+         
+     }
+     .navbtn
+     {
+         display: flex;
+         justify-content: left;
+         text-transform: uppercase;
+         text-align: left; 
+         width: 665px;
+         border-bottom: 1px solid var(--shadow-color);
+         border-radius: 0;
+         padding-left: 0;
+         margin-right: 0;
+         background-color: white;
+         color: var(--text-color);
+     }
+     .navbtn:nth-child(6)
+     {
+         border-bottom: 1px solid transparent;
+     }
+     .navbtn:hover
+     {
+         background-color: white;
+         color: var(--main-color);
+         transition: all 0s;
+     }
+     .HomeBK{
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+     }
+     .HomeBK::after
+     {
+         content: none;
+     } 
+    .HomeContent{
+        justify-content: center;
+        padding: 0;
+        position: absolute;
+        margin-left: 15%;
+        width: 550px;
+        font-size: 16px;
     }
+     .content
+     {
+         padding: 13%;
+         background: rgba(255, 255, 255, 0.8);
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         height: 250px;
+     }
     .imgsuzy1{
         /* margin-left: -20%; */
         margin-left: 15%
@@ -442,15 +528,17 @@
         padding: 3px 20px;
     }
     .o-ser{
-        width: 210px;
-        height: 200px;
+        /* width: 210px;
+        height: 200px; */
+        width: 270px;
+        height: 250px;
         padding: 20px;
         margin: 10px;
     }
     .serviceTable
     {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
     }
     .sertitle{
@@ -476,15 +564,17 @@
     }
     .portfolio-o
     {
-        width: 230px;
-        height: 230px;
+        /* width: 230px;
+        height: 230px; */
+        width: 310px;
+        height: 290px;
         padding: 0;
         margin: 6px;
     }
     .port-img
     {
-        width: 230px;
-        height: 230px;
+        width: 310px;
+        height: 290px;
     }
     .blur
     {
@@ -502,94 +592,118 @@
         top: 50%;
         right: -15%;
     }
-}
-
-@media only screen and (max-width: 991px) {
-    /* nav start here */
-    .mobile-icon
+    /* alooooooooooooooo */
+    .AUBK
     {
+        position: relative;
+    }
+    .AUBK1
+    {
+        position: relative;
         display: flex;
-        right: 13.5%;
-        top: 18%;
+        flex-direction: column-reverse;
+        height: auto;
+        margin: 0;
+        width: 100%;
     }
-    .navbtn
-    {
-        width: fit-content;
+    .text{
+        width: 70%;
+        margin: 0 auto;
     }
-    .nav a
-    {
-        text-align: left;
+    .sub-o{
+        width: 50%;
+        height: 50%;
+        padding: 10px 10px;
     }
-    .nav
-    {
-        display: none;
-        margin-right: 0px;
-        margin-top: 6%;
-        width: fit-content;
-        transform: translateX(-80px);
+    .so{
+        margin: 0;
     }
-    .navbar
+    .AUBK2
     {
-        width: 550px;
-        display: flex;
-        flex-direction: column;
-        padding-left:15px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        background-color: white;
-        border: 1px solid var(--shadow-color);
-    }
-    .navbtn
-    {
-        display: flex;
-        justify-content: left;
-        text-transform: uppercase;
-        text-align: left; 
-        width: 515px;
-        border-bottom: 1px solid var(--shadow-color);
-        border-radius: 0;
-        padding-left: 0;
-        margin-right: 0;
-        background-color: white;
-        color: var(--text-color);
-    }
-    .navbtn:nth-child(6)
-    {
-        display: flex;
-        justify-content: left;
-        text-align: left; 
-        width: 455px;
-        border-bottom: 1px solid transparent;
-        border-radius: 0;
-    }
-    .navbtn:hover
-    {
-        background-color: white;
-        color: var(--main-color);
-        transition: all 0s;
-    }
-    .HomeBK::after
-    {
-        content: none;
-    } 
-    .content
-    {
-        padding: 13%;
-        background: rgba(255, 255, 255, 0.8);
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 250px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .probar{
+        width: 100%;
+    }
+    .LanSkill{
+        width: 100%;
+        margin: 0;
+    }
+    .percent{
+        width: 100%;
+        margin: 0;
+    }
+    .o1{
+        width: auto;
+        margin-left: 0;
+        margin-right: 5%;
+        padding: 5%;
+    }
+    .MyExp{
+        font-size: 65%;
+    }
+    .textp3{
+        width: 110%;
+    }
+    .o2{
+        width: 25vw;
+    }
+    .circle1{
+        width: 40px;
+        height: 40px;
+    }
+    .chart
+    {
+        width: 100%;
+    }
+    .year{
+        height: 20px;
+    }
+    .jobtitle{
+        font-size: 80%;
+    }
+    .textp2{
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .hire{
+        height: auto;
+    }
+    .hireCon
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0px;
+    }
+    .hiretext{
+        margin: 0;
+        font-size: 24px;
+    }
+    .hireCon .button{
+        font-size: 13px;
+        padding: 0px 25px;
+        margin-top: 20px;
     }
 }
 
 @media only screen and (max-width:900px){
+    .mobile-icon{
+        right: 8vw;
+    }
+    .navbar{
+        transform: translate(-10%, 10%);
+    }
     .form{
         margin-left: -11%;
     }
 }
 @media only screen and (max-width:840px){
+    .navbar{
+        transform: translate(-15%, 10%);
+    }
     .form{
         margin-left: -15%;
     }
@@ -599,6 +713,12 @@
     }
 }
 @media only screen and (max-width:810px){
+    .mobile-icon{
+        right: 5vw;
+    }
+    .navbar{
+        transform: translate(-17%, 10%);
+    }
     .form{
         margin-left: -12%;
     }
@@ -610,7 +730,12 @@
     .headd{
         width: 70%;
     }
-
+    .mobile-icon{
+        right: 5vw;
+    }
+    .navbar{
+        transform: translate(-20%, 12%);
+    }
     .HomeBK
     {
         flex-direction: column;
@@ -712,6 +837,10 @@
         width: 40px;
         height: 40px;
     }
+    .chart
+    {
+        width: 100%;
+    }
     .year{
         height: 20px;
     }
@@ -787,12 +916,20 @@
         font-size: 12px;
         font-weight: 300;
     }
-    .chart
-    {
-        width: 100%;
-    }
+    
 }
 @media only screen and (max-width:768px){
+    .mobile-icon{
+        right: 10vw;
+    }
+    .navbar{
+        width: 540px;
+        transform: translate(-10%, 14%);
+    }
+    .navbtn{
+        width: 505px;
+    }
+
     .jobexp
     {
         display: grid;
@@ -832,7 +969,12 @@
     }
 }
 @media only screen and (max-width:688px){
-
+    .mobile-icon{
+        right: 8vw;
+    }
+    .navbar{
+        transform: translate(-20%, 14%);
+    }
     .HomeContent{
         margin-left: 8%;
     }
@@ -865,6 +1007,16 @@
     }
 }
 @media only screen and (max-width:612px){
+    .mobile-icon{
+        right: 8vw;
+    }
+    .navbar{
+        width: 450px;
+        transform: translate(-15%, 16%);
+    }
+    .navbtn{
+        width: 410px;
+    }
     .HomeContent{
         margin-left: 15%;
         width: 400px;
@@ -916,16 +1068,19 @@
     .form1 h4{
         margin-left: -72%;
     }
+
     .form-control{
-        width: 90%;
+        width: 93%;
     }
     .subform1{
         display: grid;
         grid-template-columns: 1fr;
+        width: 90%;
     }
     .btnContact{
-        width: 90%;
+        width: 93%;
         margin-top: 25px;
+        margin-left: 0;
     }
     .text-contact{
         width: 80%;
@@ -978,7 +1133,7 @@
     }
     .navbar{
         width: 400px;
-        transform: translateX(7%);
+        transform: translate(-10%, 16%);
     }
     .navbtn{
         width: 370px;
@@ -1094,7 +1249,8 @@
         height: 30px;
     }
     .btnContact{
-        transform: translateX(8px);
+        width: 90%;
+        /* transform: translateX(8px); */
     }
     .form2{
         margin: 0;
@@ -1128,6 +1284,13 @@
 }
 
 @media only screen and (max-width:500px){
+    .navbar{
+        width: 350px;
+        transform: translate(-10%, 17%);
+    }
+    .navbtn{
+        width: 320px;
+    }
     .HomeContent{
         margin-left: 12%;
         transform: translateX(-10%);
@@ -1142,6 +1305,9 @@
 }
 
 @media only screen and (max-width:440px){
+    .navbar{
+        transform: translate(-14%, 17%);
+    }
     .HomeContent{
         margin-left: 10%;
         transform: translateX(-6%);
@@ -1151,13 +1317,23 @@
         padding: 13% 4%;
     }
 }
-@media only screen and (max-width: 414px){
-    
-}
 @media only screen and (max-width: 411px){
-
+    .navbar{
+        width: 320px;
+        transform: translate(-20%, 17%);
+    }
+    .navbtn{
+        width: 280px;
+    }
 }
 @media only screen and (max-width:375px){
+    .navbar{
+        width: 250px;
+        transform: translate(-13%, 20%);
+    }
+    .navbtn{
+        width: 220px;
+    }
     .HomeContent{
         margin-left: 10%;
         transform: translateX(-4%);
@@ -1196,6 +1372,16 @@
 }
 @media only screen and (max-width:360px){}
 @media only screen and (max-width:334px){
+    .mobile-icon{
+        right: 2%;
+    }
+    .navbar{
+        width: 250px;
+        transform: translate(-20%, 20%);
+    }
+    .navbtn{
+        width: 220px;
+    }
     .sub-o
     {
         padding: 3% 6%;
