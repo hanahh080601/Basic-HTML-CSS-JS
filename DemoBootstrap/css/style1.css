@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-green: #00BF85;
+    --color-bk: #131313;
+    --color-text1: #00ca8e;
+    --color-text2: #F7F5F4;
+    --color-bkblack: #000;
+    --color-blgrey: #111;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-weight: 500;
+    color: var(--color-text1);
+}
+
+a {
+    color: var(--color-text1);
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: var(--color-text2);
+}
+
+.navbar{
+    background: var(--color-bkblack);
+    padding: 1rem 8rem;
+    z-index: 1000;
+}
+
+.navbar .navbar-brand{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+    color: white;
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a.active {
+    color: var(--color-green);
+    transition: 0.3s;
+}
+
+#navbarSupportedContent > button {
+    background: var(--color-green);
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+}
+
+.hero{
+    background-color: var(--color-bk);
+}
+
+.hero-post {
+    position: relative;
+}
+
+.hero-post-badges {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+.hero-post-badges > a {
+    display: block;
+    background-color: var(--color-blgrey);
+    color: var(--color-text1);
+    font-size: 0.8rem;
+}
+
+.hero-post-content {
+    position: absolute;
+    bottom: 5px;
+    color: white;
+}
+
+h3 {
+   font-size: 1.5rem; 
+}
+
+img {
+    filter: grayscale(30%) brightness(0.7);
+}
+
+img .rounded-circle {
+    filter: none;
+    border: 2px solid var(--color-text1);
+}
+
+.blog-posts {
+    background-color: var(--color-blgrey);
+    color: var(--color-text2);
+}
+
+.blog-post {
+    background-color: var(--color-bkblack);
+}
+
+.blog-post h3 {
+    font-size: 1.4rem;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-post .col-sm-8 {
+    border-left: 3px solid var(--color-text1);
+}
+
+.blog-post > p {
+    font-size: 0.9rem;
+}
+
+.badges > a {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin: 0.2rem;
+    padding: 0.3rem;
+    background-color: var(--color-text1);
+    color: var(--color-bkblack);
+}
+
+.social-links{
+    background-color: var(--color-text1);
+}
+
+.social-links > a {
+    font-size: 1rem;
+}
+
+body > section.blog-posts.py-4 > div > div > div.col-md-4 > div.row.text-center.social-links > div:nth-child(n) > a
+{
+    color: var(--color-bkblack) !important;
+}
+
+.aside-heading {
+    border-left: 3px solid var(--color-text1);
+}
+
+.social-link {
+    color: var(--color-text1);
+}
+
+.author p {
+    font-size: 0.8rem;
+}
+
+.footer {
+    background-color: var(--color-bk);
+    color: var(--color-text2);
+}
+
+.footer-logo {
+    background-color: var(--color-blgrey);
+    color: var(--color-text1) !important;
+}
+
+.footer p {
+    font-size: 0.8rem;
+}
+
+input{
+    background-color: var(--color-blgrey) !important;
+    color: var(--color-text1) !important;
+}
+
+/* detail */
+.primary-color a {
+    background-color: var(--color-text1);
+    color: var(--color-blgrey);
+}
+
+.content {
+    background-color: var(--color-bkblack);
+    color: var(--color-text2);
+}
+
+body > footer > div > div.row > div:nth-child(3) > form > button
+{
+    background-color: var(--color-text1);
+    color: var(--color-blgrey);
+    border-radius: 20px !important;
+}
+
+body > section > div > div > div.col-lg-4 > div.row.text-center.social-links > div:nth-child(n) > a {
+    color: #000;
+}
+
+body > section > div > div > div.col-lg-4 > div.row.text-center.social-links > div:nth-child(n) > a:hover {
+    color: #F7F5F4 !important;
+    transition: 0.3s;
+}
