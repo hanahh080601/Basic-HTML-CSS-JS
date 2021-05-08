@@ -129,7 +129,7 @@ window.onscroll = function(){
         {
             blog.classList.remove('nav-scroll');  
         }
-        if(height > heightCon)
+        if(height > heightCon - 100)
         {
             contact.classList.add('nav-scroll');
         }

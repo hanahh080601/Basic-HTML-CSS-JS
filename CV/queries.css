@@ -1348,14 +1348,17 @@
         transform: none;
     }
     .o2{
-        width: 83%;
+        width: auto;
         padding: 23px 23px;
     }
     .texth1{
         text-align: center;
     }
     .o-ser{
-        width: 89%;
+        width: 93%;
+        margin-bottom: 10px;
+        margin-right: 0;
+        margin-left: 0;
     }
     .form1 h4{
         margin-left: -55%;
