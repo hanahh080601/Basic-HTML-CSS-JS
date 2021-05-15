@@ -147,10 +147,10 @@
 {
     display: flex;
     align-items: center;
-    padding-left: 16px;
+    justify-content: center;
     margin: 4px;
-    border-radius: 20px;
-    width: 3.5vw;
+    border-radius: 50%;
+    width: 3.2vw;
     height: 6.5vh;
     font-size: medium;
     font-family: 'Roboto', sans-serif;
@@ -302,7 +302,7 @@
 .otrai
 {
     display: flex;
-    justify-content:flex-end;
+    justify-content:space-around;
     align-items: center;
     width: 28%;
     position:relative;
@@ -352,11 +352,11 @@
 .ophai
 {
     display: flex;
-    justify-content:flex-end;
+    justify-content:space-around;
     align-items: center;
     width: 30%;
     position:relative;
-    margin-right: 19vw;
+    margin-right: 14.5vw;
     cursor: pointer;
 }
 .cscn
@@ -420,10 +420,10 @@
     box-shadow:0px 0.4px 5px rgb(54, 54, 54);
     position: fixed;
     border: none;
-    border-radius: 20px;
+    border-radius: 50%;
     background-color: rgba(15, 15, 15, 0.644);
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     font-size: larger;
     right: 10px;
     bottom: 15px;
@@ -469,10 +469,10 @@
       box-shadow:0px 0.4px 5px rgb(54, 54, 54);
       position: fixed;
       border: none;
-      border-radius: 20px;
+      border-radius: 50%;
       background-color: rgba(15, 15, 15, 0.644);
-      width: 40px;
-      height: 40px;
+      width: 44px;
+      height: 44px;
       font-size: larger;
       right: 10px;
       bottom: 70px;
