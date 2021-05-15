@@ -28,4 +28,10 @@ for i in range(len(l_set)):
     l_dict.append(d)
     l_key.append(d["key"])
 print("Câu 2b: Bộ từ điển các từ trong file: ","\n", l_key)
-print("Câu 2c: Bộ từ điển các từ trong file và số lần xuất hiện: ","\n", l_dict)
+print("Câu 2c: Bộ từ điển các từ trong file và số lần xuất hiện: \n")
+for i in range(len(l_dict)):
+    print(l_dict[i])
+
+
+
+
