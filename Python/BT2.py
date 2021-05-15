@@ -1,4 +1,4 @@
-f = open('paper.txt', 'r')
+f = open("paper.txt",mode = 'r',encoding = 'utf-8')
 s = f.read()
 s_handled = ""
 for i in range(len(s)):
