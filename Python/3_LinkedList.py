@@ -9,19 +9,11 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.first = None
-        self.last = None
 
     def insert(self, x):
-        if self.first == None:
-            self.first = Node(x, None)
-            self.last = self.first
-        elif self.last == self.first:
-            self.last = Node(x, None)
-            self.first.next = self.last
-        else:
-            current = Node(x, None)
-            self.last.next = current
-            self.last = current
+        new_node = Node(x)
+        new_node.next = self.first
+        self.first = new_node
 
     def __str__(self):
         if self.first != None:
@@ -59,14 +51,34 @@ class LinkedList:
             return current.value
         return None
 
+    def shift(self, k):
+        if k == 0:
+            return
+        else:
+            current = self.first
+            count = 1
+            while (count < k and current is not None):
+                current = current.next
+                count += 1
+            if current is None:
+                return
+            NodeAt_k = current
+            while (current.next is not None):
+                current = current.next
+            current.next = self.first
+            self.first = NodeAt_k.next
+            NodeAt_k.next = None
 
 L = LinkedList()
-L.insert(1)
-L.insert(2)
-L.insert(3)
-L.insert(4)
-L.insert(5)
 L.insert(6)
+L.insert(5)
+L.insert(4)
+L.insert(3)
+L.insert(2)
+L.insert(1)
 print("Kích thước của DSLK là: ",L.__sizeof__())
 print(L)
 print("Node chính giữa của DSLK là: ", L.middleNode())
+k = int(input("Nhập k là số phần tử muốn dịch chuyển: "))
+L.shift(k)
+print("DSLK sau khi dịch k phần tử là: ", L)
