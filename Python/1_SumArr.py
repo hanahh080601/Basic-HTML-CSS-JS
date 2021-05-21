@@ -10,4 +10,4 @@ sum = 0
 for i in range(n):
     sum += arr_input[i]
     arr_output.append(sum)
-print("Mảng ban đầu là: ", arr_output)
+print("Mảng sau khi tính tổng là: ", arr_output)
