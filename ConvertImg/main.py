@@ -1,7 +1,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib import image as implt
-import cv2
+import cv2 
 
 '''
 #tao ma tran toan 0
@@ -75,7 +75,7 @@ def to_bw(img):
     #avg1 = np.array(R <= threshold) * 0 + np.array(G <= threshold) * 0 + np.array(B <= threshold) * 0
     ans = img.copy()
     for i in range(3):
-        ans[:, :, i] = avg1 #+ avg1
+        ans[:, :, i] = avg #+ avg1
     return ans
 
 plt.subplot(1, 3, 1)
