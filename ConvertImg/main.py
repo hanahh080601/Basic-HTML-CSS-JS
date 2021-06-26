@@ -56,6 +56,7 @@ cv2.waitKey(10000)
 '''
 
 img = cv2.imread("img.png")
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 plt.figure(figsize=(12,6))
 plt.suptitle("Convert RGB(1) to GrayScale(2) and Black-White(3)")
 
